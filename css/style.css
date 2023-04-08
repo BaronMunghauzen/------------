@@ -294,47 +294,59 @@ div .main_h {
     height: 20px;
 }
 
-@media (max-width:992px) {
-    .legend {
-        height: 92vh;
+@media (max-width:1000px) {
+    .text {
+        margin: 25px auto;
+        font-size: 22px;
+    }
+    .whose {
+        font-size: 23px;
+    }
+    .legend_block { 
+        margin-bottom: 0;
     }
 }
 
 
 @media (max-width:800px) {
-    .legend {
-        height: 90vh;
-    }
     .text {
-        line-height: 2.7vw;
-        font-size: 2vw;
-        margin-bottom: 2.5vw;
+        margin: 25px auto;
+        font-size: 19px;
+        line-height: 20px;
     }
     .whose {
-        font-size: 2vw;
+        font-size: 20px;
+    }
+    .legend_block { 
+        margin-bottom: 0;
     }
 }
 
 @media (max-width:600px) {
-    .legend {
-        height: 70vh;
-    }
     .text {
-        margin-bottom: 2.8vw;
+        margin: 25px auto;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .whose {
+        font-size: 19px;
+    }
+    .legend_block { 
+        margin-bottom: 0;
     }
 }
 
 @media (max-width:500px) {
-    .legend {
-        height: 70vh;
-    }
     .text {
-        line-height: 3.2vw;
-        font-size: 2.5vw;
-        margin-bottom: 2.5vw;
+        margin: 25px auto;
+        font-size: 17px;
+        line-height: 20px;
     }
     .whose {
-        font-size: 2.8vw;
+        font-size: 18px;
+    }
+    .legend_block { 
+        margin-bottom: 0;
     }
 }
 
@@ -379,7 +391,8 @@ div .main_h {
 }
 
 .products_container {
-    /* display: flex; */
+    display: flex;
+    flex-direction: column;
     width: 100%;
     align-items: center;
 }
@@ -399,7 +412,8 @@ div .main_h {
 .products_card {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -407,12 +421,13 @@ div .main_h {
     flex-direction: column;
     align-items: center;
     /* width: 50%; */
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    margin-right: 5px;
 }
 
 .card_photo {
-    height: 34vh;
-    width: 34vh;
+    height: 17vw;
+    width: 17vw;
     background-color: rgb(81, 96, 108);
     border-radius: 50%;
     transition: all .2s;
@@ -424,8 +439,8 @@ div .main_h {
 }
 
 .card_photo:hover {
-    height: 35vh;
-    width: 35vh;
+    height: 18vw;
+    width: 18vw;
 }
 .photo_lectures_closed {
     background-image: url('../img/products/IMG_3190.jpg');
@@ -439,9 +454,47 @@ div .main_h {
     font-weight: 900;
 }
 
-@media (max-width:992px) {
-    .products {
-        height: 92vh;
+@media (max-width:1000px) {
+    .products_text {
+        padding: 0;
+        padding-bottom: 30px;
+    }
+    .title_product {
+        padding-top: 15px;
+        margin-bottom: 0vw;
+        font-size: 30px;
+    }
+    .products_text {
+        padding-top: 4vh;
+        text-align: center;
+        line-height: 3.5vh;
+        margin-bottom: 0px;
+    }
+    .products_card {
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: center;
+        width: 700px;
+    }
+    .card {
+        /* width: 33%; */
+    }
+    .card_photo {
+        height: 21vw;
+        width: 21vw;
+    }
+    .card_photo:hover {
+        height: 21vw;
+        width: 21vw;
+    }
+    .card_description {
+        font-size: 20px;
+    }
+}
+@media (max-width:800px) {
+    .products_text {
+        padding: 0;
+        padding-bottom: 30px;
     }
     .title_product {
         padding-top: 15px;
@@ -455,26 +508,29 @@ div .main_h {
     }
     .products_card {
         flex-wrap: wrap;
-        width: 80%;
         margin: 0 auto;
         justify-content: center;
+        width: 550px;
     }
     .card {
-        width: 33%;
-    }
-    .card:nth-child(4), .card:nth-child(5) {
-        margin-top: 20px;
+        width: 30%;
     }
     .card_photo {
-        height: 15vh;
-        width: 15vh;
-        
+        height: 21vw;
+        width: 21vw;
+    }
+    .card_photo:hover {
+        height: 22vw;
+        width: 22vw;
+    }
+    .card_description {
+        font-size: 15px;
     }
 }
-@media (max-width:800px) {
-    .products {
-        font-size: 1.7vw;
-        height: 90vh;
+@media (max-width:600px) {
+    .products_text {
+        padding: 0;
+        padding-bottom: 30px;
     }
     .title_product {
         padding-top: 15px;
@@ -484,95 +540,104 @@ div .main_h {
         padding-top: 4vh;
         text-align: center;
         line-height: 3.5vh;
+        margin-bottom: 0px;
+        font-size: 20px;
     }
     .products_card {
         flex-wrap: wrap;
-        width: 80%;
         margin: 0 auto;
         justify-content: center;
+        width: 450px;
     }
     .card {
-        width: 33%;
-    }
-    .card:nth-child(4), .card:nth-child(5) {
-        margin-top: 20px;
+        width: 30%;
     }
     .card_photo {
-        height: 14vh;
-        width: 14vh;  
+        height: 22vw;
+        width: 22vw;
+    }
+    .card_photo:hover {
+        height: 23vw;
+        width: 23vw;
     }
     .card_description {
-        padding-top: 10px;
-    }
-}
-@media (max-width:600px) {
-    .container {
-        width: 90%;
-    }
-    .products {
-        font-size: 2vw;
-        height: 70vh;
-    }
-    .title_product {
-        padding-top: 15px;
-    }
-    .products_text {
-        padding-top: 2vh;
-        padding-bottom: 2vh;
-        text-align: center;
-        line-height: 3.5vh;
-    }
-    .products_card {
-        flex-wrap: wrap;
-        width: 80%;
-        margin: 0 auto;
-        justify-content: center;
-    }
-    .card {
-        width: 33%;
-    }
-    .card:nth-child(4), .card:nth-child(5) {
-        margin-top: 15px;
-    }
-    .card_photo {
-        height: 10vh;
-        width: 10vh;
+        font-size: 12px;
     }
 }
 
 @media (max-width:500px) {
-    .container {
-        width: 95%;
-    }
-    .products {
-        font-size: 2.2vw;
-        height: 70vh;
+    .products_text {
+        padding: 0;
+        padding-bottom: 30px;
     }
     .title_product {
-        padding-top: 20px;
+        padding-top: 15px;
+        margin-bottom: 0vw;
     }
     .products_text {
-        padding-top: 3vh;
-        padding-bottom: 2vh;
+        padding-top: 4vh;
         text-align: center;
         line-height: 3.5vh;
+        margin-bottom: 0px;
+        font-size: 17px;
     }
     .products_card {
         flex-wrap: wrap;
-        width: 80%;
         margin: 0 auto;
         justify-content: center;
+        width: 400px;
     }
     .card {
-        width: 33%;
-    }
-    .card:nth-child(4), .card:nth-child(5) {
-        margin-top: 5px;
+        width: 30%;
     }
     .card_photo {
-        height: 8vh;
-        width: 8vh;
-        
+        height: 25vw;
+        width: 25vw;
+    }
+    .card_photo:hover {
+        height: 27vw;
+        width: 27vw;
+    }
+    .card_description {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:500px) {
+    .products_text {
+        padding: 0;
+        padding-bottom: 30px;
+    }
+    .title_product {
+        padding-top: 15px;
+        margin-bottom: 0vw;
+    }
+    .products_text {
+        padding-top: 4vh;
+        text-align: center;
+        line-height: 3.5vh;
+        margin-bottom: 0px;
+        font-size: 15px;
+    }
+    .products_card {
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: center;
+        width: 100%;
+    }
+    .card {
+        width: 30%;
+    }
+    .card_photo {
+        height: 25vw;
+        width: 25vw;
+    }
+    .card_photo:hover {
+        height: 27vw;
+        width: 27vw;
+    }
+    .card_description {
+        font-size: 8px;
     }
 }
 
@@ -940,8 +1005,7 @@ div .main_h {
 
 
 .registration {
-    width: 100%;
-    height: 95vh;
+    width: 100%;    
     color: white;
 }
 
@@ -951,7 +1015,6 @@ div .main_h {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 90vh;
     margin: 5vh 0;
     background-color: rgb(20, 174, 207);
 }
@@ -984,7 +1047,7 @@ div .main_h {
 
 
 .product_type {
-    width: 30vw;
+    width: 500px;
     height: 3vw;
     border: 2px solid #888888;
     border-radius: 8px;
@@ -999,7 +1062,7 @@ div .main_h {
 }
 
 .fullname {
-    width: 30vw;
+    width: 500px;
     height: 3vw;
     border: 2px solid #888888;
     border-radius: 8px;
@@ -1013,7 +1076,7 @@ div .main_h {
 }
 
 .phone {
-    width: 30vw;
+    width: 500px;
     height: 3vw;
     border: 2px solid #888888;
     border-radius: 8px;
@@ -1027,7 +1090,7 @@ div .main_h {
 }
 
 .email {
-    width: 30vw;
+    width: 500px;
     height: 3vw;
     border: 2px solid #888888;
     border-radius: 8px;
@@ -1051,7 +1114,7 @@ div .main_h {
     border: 2px solid white;
     border-radius: 8px;
     cursor: pointer;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     font-size: 1.8vw;
     border-color: white;
     color: rgb(20, 174, 207);
@@ -1067,169 +1130,99 @@ div .main_h {
 
 }
 
-@media (max-width:992px) {
-    .registration_block {
-        height: 90vh;
+@media (max-width:1000px) {
+    .title_registration {
+        padding-top: 0px;
+        font-size: 3vw;
+        margin-bottom: 40px;
     }
     .type_row, .fullname_row, .phone_row, .email_row {
         font-size: 2vw;
     }
     .product_type {
+        width: 500px;
         height: 4vw;
     }
     .fullname {
+        width: 500px;
         height: 4vw;
     }
     .phone {
+        width: 500px;
         height: 4vw;
     }
     .email {
+        width: 500px;
         height: 4vw;
+        margin-bottom: 40px;
     }
     .registration_button {
-        height: 5vw;
-    }
-}
-
-@media (max-width:800px) {
-    .registration_block {
-        height: 80vh;
-    }
-    .type_row, .fullname_row, .phone_row, .email_row {
-        font-size: 1.7vw;
-    }
-    .product_type {
-        height: 4vw;
-        width: 48vw;
-    }
-    .fullname {
-        height: 4vw;
-        width: 48vw;
-    }
-    .phone {
-        height: 4vw;
-        width: 48vw;
-    }
-    .email {
-        height: 4vw;
-        width: 48vw;
-    }
-    .registration_button {
+        width: 200px;
         height: 5vw;
     }
 }
 
 @media (max-width:600px) {
-    .registration_block {
-        height: 70vh;
-    }
     .title_registration {
-        padding-top: 10px;
-        font-size: 3.4vw;
+        padding-top: 0px;
+        font-size: 3vw;
+        margin-bottom: 40px;
     }
     .type_row, .fullname_row, .phone_row, .email_row {
-        font-size: 2.1vw;
+        font-size: 2vw;
     }
     .product_type {
-        height: 5vw;
-        width: 48vw;
+        width: 300px;
+        height: 4vw;
     }
     .fullname {
-        height: 5vw;
-        width: 48vw;
+        width: 300px;
+        height: 4vw;
     }
     .phone {
-        height: 5vw;
-        width: 48vw;
+        width: 300px;
+        height: 4vw;
     }
     .email {
+        width: 300px;
+        height: 4vw;
+        margin-bottom: 40px;
+    }
+    .registration_button {
+        width: 100px;
         height: 5vw;
-        width: 48vw;
-    }
-    .registration_button {
-        height: 6vw;
-    }
-    .registration_form {
-        width: 80vw;
-        display: flex;
     }
 }
-@media (max-width:500px) {
-    .registration {
-        height: 80vh;
-    }
-    .registration_block {
-        height: 60vh;
-    }
-    .title_registration {
-        font-size: 22px;
-    }
-    .type_row, .fullname_row, .phone_row, .email_row {
-        font-size: 11px;
-    }
-    .product_type {
-        height: 6vw;
-        width: 55vw;
-        margin: 10px 0;
-    }
-    .fullname {
-        height: 6vw;
-        width: 55vw;
-        margin: 10px 0;
-    }
-    .phone {
-        height: 6vw;
-        width: 55vw;
-        margin: 10px 0;
-    }
-    .email {
-        height: 6vw;
-        width: 55vw;
-        margin: 10px 0;
-    }
-    .registration_button {
-        margin-top: 15px;
-        height: 6vw;
-        font-size: 11px;
-    }
-}
+
 @media (max-width:400px) {
-    .registration {
-        height: 70vh;
-    }
-    .registration_block {
-        height: 50vh;
-    }
     .title_registration {
-        font-size: 22px;
+        padding-top: 0px;
+        font-size: 3vw;
+        margin-bottom: 40px;
     }
     .type_row, .fullname_row, .phone_row, .email_row {
-        font-size: 11px;
+        font-size: 2vw;
     }
     .product_type {
-        height: 6vw;
-        width: 55vw;
-        margin: 13px 0;
+        width: 250px;
+        height: 4vw;
     }
     .fullname {
-        height: 6vw;
-        width: 55vw;
-        margin: 13px 0;
+        width: 250px;
+        height: 4vw;
     }
     .phone {
-        height: 6vw;
-        width: 55vw;
-        margin: 13px 0;
+        width: 250px;
+        height: 4vw;
     }
     .email {
-        height: 6vw;
-        width: 55vw;
-        margin: 13px 0;
+        width: 250px;
+        height: 4vw;
+        margin-bottom: 40px;
     }
     .registration_button {
-        margin-top: 15px;
-        height: 6vw;
-        font-size: 11px;
+        width: 70px;
+        height: 5vw;
     }
 }
 
@@ -1243,7 +1236,7 @@ div .main_h {
 
     display: flex;
     align-items: flex-end;
-    height: 50vh;
+    height: 400px;
     margin: 0 0 4vw 4vw;
 }
 
@@ -1275,28 +1268,31 @@ div .main_h {
     width: 2.6vw;
 }
 
-.contacts_media {
-    position: absolute;
-    bottom: 40px;
-    left: 50px;
-    font-size: 45px;
-    display: flex;
-    align-items: flex-end;
+.contacts_media .fa{
+    color: black;
+    margin-right: 10px;
+    font-size: 30px;
+}
+a {
+    text-decoration: none;
 }
 
 @media (max-width:992px) {
     .contacts {
-        height:35vh;
+        height: 300px;
     }
     .contacts_block p {
         font-size: 2vw;
         margin-top: 10px;
     }
+    .contacts_media .fa{
+        font-size: 3vw;
+    }
 }
 
 @media (max-width:800px) {
     .contacts {
-        height:16vh;
+        height: 150px;
     }
     .contacts_block p {
         font-size: 2.3vw;
@@ -1305,7 +1301,7 @@ div .main_h {
 }
 @media (max-width:600px) {
     .contacts {
-        height:0;
+        height: 150px;
     }
     .contacts_block p {
         font-size: 2.3vw;
@@ -1315,7 +1311,7 @@ div .main_h {
 
 @media (max-width:500px) {
     .contacts {
-        height: 0;
+        height: 150px;
     }
     .contacts_block p {
         font-size: 2.6vw;
@@ -1324,7 +1320,7 @@ div .main_h {
 }
 @media (max-width:400px) {
     .contacts {
-        height: 0;
+        height: 150px;
     }
     .contacts_block p {
         font-size: 2.8vw;
