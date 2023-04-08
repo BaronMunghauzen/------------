@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Floripa';
+    src: url('Floripa.eot');
+    src: local('Floripa'),
+        url('Floripa.eot?#iefix') format('embedded-opentype'),
+        url('Floripa.woff2') format('woff2'),
+        url('Floripa.woff') format('woff'),
+        url('Floripa.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

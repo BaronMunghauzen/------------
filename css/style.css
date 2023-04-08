@@ -28,9 +28,9 @@ body {
 header {
     width: 100%;
     height: 100vh;
-    background-image: url('../img/BGI.png');
+    background-image: url('../img/лайк/1/change.jpg');
     background-size: cover;
-    background-position: center 0px;
+    background-position: center;
 }
 
 .burger {
@@ -43,16 +43,17 @@ header {
 .nav {
     width: 100%;
     position: absolute;
-    top: 90vh;
+    top: 88.5vh;
+    bottom: 40px;
     display: flex;
     justify-content: space-evenly;
-    font-size: 1.9vw;
-    bottom: 40px;
-    opacity: 0.8;
+    font-size: 23px;
+    opacity: 1;
     transition: all .1s;
 }
 .nav_button a {
-    color: rgb(255, 255, 255, 0.9);
+    color: rgb(255, 255, 255, 0.8);
+    font-weight: 900;
     text-decoration: none;
 }
 .nav_button a:hover {
@@ -60,32 +61,49 @@ header {
     cursor: pointer;
 }
 
-
-.main_h {
-    opacity: 0.5;
-}
-
-div .PersonaBuilding {
+div .main_h {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
     height: 100%;
-    color: white;
-    font-size: 4.5vw;
+    color: rgb(255, 255, 255, 0.85);
+    align-items: center;
+    opacity: 1;
 }
+
+.Grigoriy {
+    /* text-align: center; */
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 55px;
+    position: relative;
+    left: 20px;
+}
+
+.line {
+    height: 2px;
+    width: 700px;
+    background-color: white;
+}
+
+.psychology, .PersonaBuilding {
+    font-size: 30px;
+    font-weight: 900;
+    
+}
+
 .media {
     position: absolute;
-    bottom: 4vh;
-    right: 4vh;
+    bottom: 40px;
+    left: 50px;
+    font-size: 45px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    font-size: 3vw;
-
+    
 }
 
 .media .fa {
-    color: rgb(255, 255, 255, 0.5);
+    color: rgb(255, 255, 255, 0.7);
     padding-top: 10px;
     transition: all .1s;
 }
@@ -95,24 +113,23 @@ div .PersonaBuilding {
 }
 
 
-@media (max-width:992px) {
+@media (max-width:1000px) {
     header {
         height: 92vh;
     }
-    div .PersonaBuilding {
-        font-size: 5.5vw;
-    }
-    .main_h {
-        margin-top: 70px;
+    
+    .Grigoriy {
+        /* text-align: center; */
+        margin-top: 30px;
     }
     .nav {
-        top: 85vh;
-        font-size: 2.5vw;
+        top: 81vh;
+        font-size: 20px;
     }
     .media {
-        bottom: 10vh;
-        right: 4vh;
-        font-size: 4vw;
+        bottom: 100px;
+        left: 30px;
+        font-size: 38px;
     }
 }
 
@@ -121,66 +138,105 @@ div .PersonaBuilding {
     header {
         height: 90vh;
     }
-    div .PersonaBuilding {
-        font-size: 5.5vw;
+    .Grigoriy {
+        margin-top: 30px;
+        font-size: 45px;
+        left: 0px;
     }
-    .main_h {
-        margin-top: 70px;
+    .line {
+        height: 1px;
+        width: 550px;
+        background-color: white;
+    }
+    .psychology, .PersonaBuilding {
+        font-size: 28px;
+        font-weight: 900;
+        
     }
     .nav {
-        top: 82vh;
-        font-size: 2.5vw;
+        top: 80vh;
+        font-size: 18px;
     }
     .media {
-        bottom: 14vh;
-        right: 4vh;
-        font-size: 4vw;
+        bottom: 250px;
+        left: 20px;
+        font-size: 36px;
     }
 }
 
 @media (max-width:600px) {
-    header {
-        height: 70vh;
+    .Grigoriy {
+        margin-top: 35px;
+        font-size: 40px;
+        left: 0px;
     }
-    div .PersonaBuilding {
-        font-size: 5.5vw;
-    }
-    .main_h {
-        margin-top: 70px;
-    }
-    .nav {
-        top: 62vh;
-        font-size: 2.5vw;
-    }
-    .media {
-        bottom: 35vh;
-        right: 4vh;
-        font-size: 4vw;
+    .line {
+        height: 1px;
+        width: 450px;
+        background-color: white;
     }
 }
 
 @media (max-width:500px) {
     header {
-        height: 70vh;
+        height: 90vh;
     }
-    div .PersonaBuilding {
-        font-size: 7vw;
+    .Grigoriy {
+        font-size: 33px;
+        margin-top: 45px;
+        left: 0px;
     }
-    .main_h {
-        margin-top: 100px;
+    .line {
+        height: 1px;
+        width: 350px;
+        background-color: white;
+    }
+    .psychology, .PersonaBuilding {
+        font-size: 24px;
+        font-weight: 900;
     }
     .nav {
-        top: 62vh;
-        font-size: 4vw;
+        top: 80vh;
+        font-size: 19px;
     }
     .media {
-        display: none;
-        bottom: 40vh;
-        right: 2vh;
-        font-size: 6vw;
+        bottom: 250px;
+        left: 22px;
+        font-size: 32px;
     }
 }
 
+@media (max-width:400px) {
+    header {
+        height: 90vh;
+    }
+    .Grigoriy {
+        font-size: 28px;
+        margin-top: 45px;
+        left: 0px;
+    }
+    .line {
+        height: 1px;
+        width: 250px;
+        background-color: white;
+    }
+    .psychology, .PersonaBuilding {
+        font-size: 19px;
+        font-weight: 900;
+    }
+    .nav {
+        top: 80vh;
+        font-size: 15px;
+    }
+    .media {
+        bottom: 250px;
+        left: 22px;
+        font-size: 30px;
+    }
+}
+
+
+/* Добавить 400px блок */
 
 
 
@@ -189,43 +245,53 @@ div .PersonaBuilding {
 
 .container {
     /* height: 100%; */
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
 .legend {
     width: 100%;
-    height: 95vh;
+    /* height: 90vh; */
     scroll-behavior: smooth;
     display: flex;
 
 }
 .legend_block { 
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    
     align-items: flex-end;
     flex-direction: column;
     width: 100%;
     height: 95%;
-    margin: 5vh 0;
-    background-color: #D9D9D9;
-    position: relative;
+    margin: 8vh 0;
 }
 .text {
-    width: 97%;
+    width: 100%;
     margin: 0 auto;
     line-height: 2.5vw;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 27px;
     margin-bottom: 2.5vw;
+    text-align: justify;
 }
 .whose {
     margin-right: 60px;
     display: flex;
     justify-content: flex-end;
-    font-size: 1.5vw;
+    font-size: 26px;
     font-weight: 900;
     /* font-style: italic; */
+}
+
+/* .blue {
+    color: rgb(76, 148, 255);
+    font-size: 23px;
+    font-weight: 900;
+} */
+
+.space {
+    height: 20px;
 }
 
 @media (max-width:992px) {
@@ -287,7 +353,6 @@ div .PersonaBuilding {
 .products {
     font-size: 1.5vw;
     width: 100%;
-    height: 95vh;
     scroll-behavior: smooth;
     display: flex;
     
@@ -301,8 +366,9 @@ div .PersonaBuilding {
     width: 100%;
     height: 95%;
     margin: 5vh 0;
-    background-color: #D9D9D9;
+    background-color: rgb(20, 174, 207);
     position: relative;
+    color: white;
 }
 
 .title_product {
@@ -320,41 +386,57 @@ div .PersonaBuilding {
 
 .products_text {
     padding: 5vh;
-    text-align: center;
-    line-height: 3.5vh;
-    margin-bottom: 50px;
+    text-align: justify;
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-size: 27px;
+}
+
+.bold {
+    font-weight: 900;
 }
 
 .products_card {
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 20px;
 }
 
 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    /* width: 50%; */
+    margin-bottom: 40px;
 }
 
 .card_photo {
-    height: 19vh;
-    width: 19vh;
+    height: 34vh;
+    width: 34vh;
     background-color: rgb(81, 96, 108);
     border-radius: 50%;
     transition: all .2s;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .card_photo:hover {
-    height: 21vh;
-    width: 21vh;
+    height: 35vh;
+    width: 35vh;
+}
+.photo_lectures_closed {
+    background-image: url('../img/products/IMG_3190.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .card_description {
     text-align: center;
-    padding-top: 20px;
     cursor: pointer;
+    font-weight: 900;
 }
 
 @media (max-width:992px) {
@@ -504,6 +586,7 @@ div .PersonaBuilding {
     /* justify-content: flex-start; */
     /* align-items: center; */
     flex-direction: column;
+    background-color: white;
 }
 
 
@@ -550,6 +633,11 @@ div .PersonaBuilding {
     cursor: pointer;
 }
 
+.product_text button {
+    background-color: #d6e2f3;
+    height: 50px;
+}
+
 .product_img {
     width: 50%;
     height: 100%;
@@ -566,9 +654,10 @@ div .PersonaBuilding {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(244, 244, 244);
+    background-color: rgb(245, 245, 245);
     animation-name: resize_consultations;
     animation-duration: 0.2s;
+    background-image: none;
 }
 
 @keyframes resize_consultations {
@@ -587,7 +676,7 @@ div .PersonaBuilding {
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgb(244, 244, 244);
+        background-color: rgb(245, 245, 245);
     }
 }
 
@@ -599,9 +688,10 @@ div .PersonaBuilding {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(244, 244, 244);
+    background-color: rgb(245, 245, 245);
     animation-name: resize_group_classes;
     animation-duration: 0.2s;
+    background-image: none;
 }
 
 @keyframes resize_group_classes {
@@ -620,7 +710,7 @@ div .PersonaBuilding {
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgb(244, 244, 244);
+        background-color: rgb(245, 245, 245);
     }
 }
 
@@ -631,9 +721,10 @@ div .PersonaBuilding {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(244, 244, 244);
+    background-color: rgb(245, 245, 245);
     animation-name: resize_family_therapy;
     animation-duration: 0.2s;
+    background-image: none;
 }
 
 @keyframes resize_family_therapy {
@@ -652,7 +743,7 @@ div .PersonaBuilding {
         right: 0;
         width: 100%;
         height: 100%;
-        background-color: rgb(244, 244, 244);
+        background-color: rgb(245, 245, 245);
     }
 }
 
@@ -664,9 +755,10 @@ div .PersonaBuilding {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(244, 244, 244);
+    background-color: rgb(245, 245, 245);
     animation-name: resize_bootcamp;
     animation-duration: 0.2s;
+    background-image: none;
 }
 
 @keyframes resize_bootcamp {
@@ -685,7 +777,7 @@ div .PersonaBuilding {
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgb(244, 244, 244);
+        background-color: rgb(245, 245, 245);
     }
 }
 
@@ -696,9 +788,10 @@ div .PersonaBuilding {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(244, 244, 244);
+    background-color: rgb(245, 245, 245);
     animation-name: resize_lectures;
     animation-duration: 0.2s;
+    background-image: none;
 }
 
 @keyframes resize_lectures {
@@ -717,7 +810,7 @@ div .PersonaBuilding {
         right: 0;
         width: 100%;
         height: 100%;
-        background-color: rgb(244, 244, 244);
+        background-color: rgb(245, 245, 245);
     }
 }
 
@@ -849,6 +942,7 @@ div .PersonaBuilding {
 .registration {
     width: 100%;
     height: 95vh;
+    color: white;
 }
 
 .registration_block {
@@ -859,7 +953,7 @@ div .PersonaBuilding {
     width: 100%;
     height: 90vh;
     margin: 5vh 0;
-    background-color: #D9D9D9;
+    background-color: rgb(20, 174, 207);
 }
 
 .title_registration {
@@ -872,6 +966,7 @@ div .PersonaBuilding {
     display: flex;
     flex-direction: column;
     width: 65vw;
+    align-items: center;
 }
 
 /* .registration_form:last-child {
@@ -886,24 +981,17 @@ div .PersonaBuilding {
     font-size: 1.5vw;
 }
 
-select {
-	/* for Firefox */
-	-moz-appearance: none;
-	/* for Chrome */
-	-webkit-appearance: none;
-}
-select::-ms-expand {
-	/* IE */
-	display: none;
-}
+
 
 .product_type {
-    width: 50vw;
+    width: 30vw;
     height: 3vw;
     border: 2px solid #888888;
     border-radius: 8px;
     cursor: pointer;
-    margin: 20px 0;
+    margin: 5px 0;
+    color: rgb(117, 117, 117);
+    padding-left: 15px;
 }
 
 .product_type:hover {
@@ -911,12 +999,13 @@ select::-ms-expand {
 }
 
 .fullname {
-    width: 50vw;
+    width: 30vw;
     height: 3vw;
     border: 2px solid #888888;
     border-radius: 8px;
     cursor: pointer;
-    margin: 20px 0;
+    margin: 5px 0;
+    padding-left: 20px;
 }
 
 .fullname:hover {
@@ -924,12 +1013,13 @@ select::-ms-expand {
 }
 
 .phone {
-    width: 50vw;
+    width: 30vw;
     height: 3vw;
     border: 2px solid #888888;
     border-radius: 8px;
     cursor: pointer;
-    margin: 20px 0;
+    margin: 5px 0;
+    padding-left: 20px;
 }
 
 .phone:hover {
@@ -937,13 +1027,14 @@ select::-ms-expand {
 }
 
 .email {
-    width: 50vw;
+    width: 30vw;
     height: 3vw;
     border: 2px solid #888888;
     border-radius: 8px;
     cursor: pointer;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    padding-left: 20px;
 }
 .email:hover {
     border: 3px solid #323232;
@@ -955,18 +1046,24 @@ select::-ms-expand {
 }
 
 .registration_button {
-    width: 40vw;
+    width: 300px;
     height: 4vw;
-    border: 2px solid #888888;
+    border: 2px solid white;
     border-radius: 8px;
     cursor: pointer;
     margin-bottom: 10px;
     font-size: 1.8vw;
+    border-color: white;
+    color: rgb(20, 174, 207);
+    font-weight: 900;
+    background-color: white;
 }
 
 .registration_button:hover {
-    border: 3px solid #323232;
+    border: 3px solid white;
     cursor: pointer;
+    background-color: rgb(20, 174, 207);
+    color: white;
 
 }
 
@@ -1054,6 +1151,7 @@ select::-ms-expand {
     }
     .registration_form {
         width: 80vw;
+        display: flex;
     }
 }
 @media (max-width:500px) {
