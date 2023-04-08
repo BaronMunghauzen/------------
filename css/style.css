@@ -416,13 +416,16 @@ div .main_h {
     flex-wrap: wrap;
 }
 
+.products_card a {
+    color: white;
+}
+
 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
     /* width: 50%; */
     margin-bottom: 20px;
-    margin-right: 5px;
 }
 
 .card_photo {
@@ -442,7 +445,7 @@ div .main_h {
     height: 18vw;
     width: 18vw;
 }
-.photo_lectures_closed {
+.photo_lectures {
     background-image: url('../img/products/IMG_3190.jpg');
     background-size: cover;
     background-position: center;
@@ -646,353 +649,116 @@ div .main_h {
 
 
 
-.productanimation_block {
+.productslider_block {
     display: flex;
-    /* justify-content: flex-start; */
-    /* align-items: center; */
     flex-direction: column;
     background-color: white;
+    width: 100%;
 }
 
-
-.closing_container {
-    display: flex;
-    justify-content: flex-end;
-}
-.closing {
-    cursor: pointer;
-    display: inline;
-    border: none;
-    /* background-color: rgb(244, 244, 244); */
-    background: none;
-    font-size: 4vh;
-}
-
-.animation_title_product {
+.slider_title_product {
     margin: 0;
     display: flex;
     justify-content: center;
-    font-size: 3vw;
-    margin-bottom: 15vh;
+    font-size: 35px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
-.animation_product_container {
+.slider_product_container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.product_img {
+    max-width: 700px;
+    margin-bottom: 15px;
+}
 .product_text {
     display: flex;
     text-align: center;
-    width: 50%;
-    line-height: 4vh;
-    max-height: 371px;
-    overflow: auto;
+    font-size: 23px;
+    line-height: 30px;
+    max-width: 90%;
+    margin: 0 auto;
     align-items: flex-start;
-    padding-right: 15px;
-    padding-left: 15px;
     justify-content: space-around;
 }
 
 .product_text a {
-    color: #0000EE;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    background-color: rgb(20, 174, 207);
+    border: 2px solid rgb(20, 174, 207);
+    border-radius: 8px;    
+    margin-top: 1opx;
 }
+
 
 .product_text button {
-    background-color: #d6e2f3;
-    height: 50px;
+    width: 250px;
+    /* background-color: rgb(20, 174, 207); */
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    font-size: 22px;
+    padding: 0;
 }
 
-.product_img {
-    width: 50%;
-    height: 100%;
-    max-height: 371px;
+.product_text a:hover {
+    background-color: white;
+    color: rgb(20, 174, 207);
 }
-
-
-
-
-/* блок для анимации кружочка индивидуальных сеансов */
-.photo_consultations_open {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(245, 245, 245);
-    animation-name: resize_consultations;
-    animation-duration: 0.2s;
-    background-image: none;
-}
-
-@keyframes resize_consultations {
-    0%{
-        position: absolute;
-        bottom: calc(90vh / 3.5);
-        left: calc(100% / 25);
-        height: 19vh;
-        width: 19vh;
-        background-color: rgb(81, 96, 108);
-        border-radius: 100vw;
-    }
-    100%{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgb(245, 245, 245);
-    }
-}
-
-
-/* блок для анимации кружочка групповых сеансов */
-.photo_group_classes_open {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(245, 245, 245);
-    animation-name: resize_group_classes;
-    animation-duration: 0.2s;
-    background-image: none;
-}
-
-@keyframes resize_group_classes {
-    0%{
-        position: absolute;
-        bottom: calc(90vh / 3.5);
-        left: calc(100% / 4);
-        height: 19vh;
-        width: 19vh;
-        background-color: rgb(81, 96, 108);
-        border-radius: 100vw;
-    }
-    100%{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgb(245, 245, 245);
-    }
-}
-
-/* блок для анимации кружочка семейной терапии */
-.photo_family_therapy_open {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(245, 245, 245);
-    animation-name: resize_family_therapy;
-    animation-duration: 0.2s;
-    background-image: none;
-}
-
-@keyframes resize_family_therapy {
-    0%{
-        position: absolute;
-        bottom: calc(90vh / 3.5);
-        right: calc(100% / 2);
-        height: 19vh;
-        width: 19vh;
-        background-color: rgb(81, 96, 108);
-        border-radius: 100vw;
-    }
-    100%{
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgb(245, 245, 245);
-    }
-}
-
-
-/* блок для анимации кружочка BootSession */
-.photo_bootcamp_open {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(245, 245, 245);
-    animation-name: resize_bootcamp;
-    animation-duration: 0.2s;
-    background-image: none;
-}
-
-@keyframes resize_bootcamp {
-    0%{
-        position: absolute;
-        bottom: calc(90vh / 3.5);
-        right: calc(100% / 4);
-        height: 19vh;
-        width: 19vh;
-        background-color: rgb(81, 96, 108);
-        border-radius: 100vw;
-    }
-    100%{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgb(245, 245, 245);
-    }
-}
-
-/* блок для анимации кружочка открытых лекций */
-.photo_lectures_open {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(245, 245, 245);
-    animation-name: resize_lectures;
-    animation-duration: 0.2s;
-    background-image: none;
-}
-
-@keyframes resize_lectures {
-    0%{
-        position: absolute;
-        bottom: calc(90vh / 3.5);
-        right: calc(100% / 25);
-        height: 19vh;
-        width: 19vh;
-        background-color: rgb(81, 96, 108);
-        border-radius: 100vw;
-    }
-    100%{
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgb(245, 245, 245);
-    }
-}
-
-
-
-
-
 
 @media (max-width:800px) {
-    .animation_product_container {
-        padding-top: 40px;
-        display: flex;
-    }
-    .animation_product_container_bootcamp {
-        padding-top: 0px;
-    }
-    .animation_title_product_bootcamp {
-        margin-bottom: 8vh;
-    }
-    
-    .product_img {
-        display: none;
+    .slider_title_product {
+        font-size: 28px;
     }
     .product_text {
-        width: 90%;
-        margin: 0 auto;
-        padding-right: 0px;
-        padding-left: 0px;
-        line-height: 4vw;
-        font-size: 2.2vw;
-        max-height: 400px;
-    }
-    .product_text_bootcamp {
-        font-size: 2.1vw;
-        line-height: 3.6vw;
-    }
-}
-
-@media (max-width:600px) {
-    .animation_product_container {
-        padding-top: 0px;
-        display: flex;
-    }
-    .animation_product_container_bootcamp {
-        padding-top: 0px;
-    }
-    .animation_title_product {
-        margin-bottom: 8vh;
-        font-size: 3.5vw;
-    }
-    .animation_title_product_bootcamp {
-        margin-bottom: 8vh;
+        font-size: 18px;
     }
     .product_img {
-        display: none;
-    }
-    .product_text {
-        width: 90%;
-        margin: 0 auto;
-        padding-right: 0px;
-        padding-left: 0px;
-        line-height: 4vw;
-        font-size: 2.6vw;
-        max-height: 400px;
-    }
-    .product_text_bootcamp {
-        font-size: 2.1vw;
-        line-height: 3.6vw;
+        max-width: 450px;
+        margin-bottom: 15px;
     }
 }
 
 @media (max-width:500px) {
-    .animation_product_container {
-        padding-top: 0px;
-        display: flex;
-    }
-    .animation_product_container_bootcamp {
-        padding-top: 0px;
-    }
-    .animation_title_product {
-        margin-bottom: 8vh;
-        font-size: 4vw;
-    }
-    .animation_title_product_bootcamp {
-        margin-bottom: 8vh;
-    }
-    .product_img {
-        display: none;
+    .slider_title_product {
+        font-size: 25px;
     }
     .product_text {
-        width: 90%;
-        margin: 0 auto;
-        padding-right: 0px;
-        padding-left: 0px;
-        line-height: 4vw;
-        font-size: 2.8vw;
-        max-height: 400px;
+        font-size: 15px;
     }
-    .product_text_bootcamp {
-        font-size: 2.4vw;
-        line-height: 3.6vw;
+    .product_img {
+        max-width: 350px;
+        margin-bottom: 15px;
+    }
+    .product_text button {
+        width: 150px;
+        font-size: 17px;
     }
 }
 
 @media (max-width:400px) {
-    .animation_title_product {
-        margin-bottom: 8vh;
-        font-size: 5vw;
+    .slider_title_product {
+        font-size: 22px;
     }
     .product_text {
-        line-height: 5.5vw;
-        font-size: 3.2vw;
-        max-height: 400px;
+        font-size: 12px;
     }
-    .product_text_bootcamp {
-        font-size: 3vw;
-        line-height: 4.5vw;
+    .product_img {
+        max-width: 250px;
+        margin-bottom: 15px;
+    }
+    .product_text button {
+        width: 150px;
+        font-size: 15px;
     }
 }
 

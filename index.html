@@ -8,6 +8,7 @@
     <title>Георгий</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/itc-slider.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -22,9 +23,9 @@
             </div>
             <div class="main_h ">
                 <h2 class="Grigoriy">Григорий Маглатов</h2>
-                    <div class="line"></div>
-                    <div class="psychology">Психология</div>
-                    <div class="PersonaBuilding">PersonaBuilding</div>
+                <div class="line"></div>
+                <div class="psychology">Психология</div>
+                <div class="PersonaBuilding">PersonaBuilding</div>
             </div>
         </div>
         <div class="media">
@@ -48,7 +49,8 @@
             <div class="legend_block">
                 <div class="container">
                     <div class="text">
-                        <span class="blue">«</span>Мы взаимодействуем с окружающим миром через нашу личность (persona), и только через неё. От
+                        <span class="blue">«</span>Мы взаимодействуем с окружающим миром через нашу личность (persona),
+                        и только через неё. От
                         того, насколько сильную личность мы смогли сотворить, будет во многом зависеть наше качество
                         жизни. Личность может как давать Вам силу, так и ограничивать Вас.<br>
                         <div class="space"> </div>
@@ -97,49 +99,61 @@
                                 Ознакомьтесь с информацией о каждом формате и выберете себе тот, который Вам больше
                                 всего подходит!<br>
                                 <div class="space"> </div>
-                                Все сеансы я провожу лично.</span>
+                                Все сеансы я провожу лично.
+                            </span>
                         </div>
 
 
                         <div class="products_card">
+
                             <div class="card consultations">
-                                <div class="card_photo photo_consultations_closed">
-                                    <div class="card_description">
-                                        <span>Индивидуальные сеансы</span>
+                                <a href="#consultations">
+                                    <div class="card_photo">
+                                        <div class="card_description">
+                                            <span>Индивидуальные сеансы</span>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
+
                             <div class="card group_classes">
-                                <div class="card_photo photo_group_classes_closed">
-                                    <div class="card_description">
-                                        <span>Групповые сеансы</span>
+                                <a href="#group_classes">
+                                    <div class="card_photo">
+                                        <div class="card_description">
+                                            <span>Групповые сеансы</span>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
 
                             <div class="card family_therapy">
-                                <div class="card_photo photo_family_therapy_closed">
-                                    <div class="card_description">
-                                        <span>Семейные сеансы</span>
+                                <a href="#family_therapy">
+                                    <div class="card_photo">
+                                        <div class="card_description">
+                                            <span>Семейные сеансы</span>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
-
                             <div class="card bootcamp">
-                                <div class="card_photo photo_bootcamp_closed">
-                                    <div class="card_description">
-                                        <span>Bootsession</span>
+                                <a href="#bootcamp">
+                                    <div class="card_photo">
+                                        <div class="card_description">
+                                            <span>Bootsession</span>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="card lectures">
-                                <div class="card_photo photo_lectures_closed">
-                                    <div class="card_description">
-                                        <span>Открытые лекции</span>
+                                <a href="#lectures">
+                                    <div class="card_photo photo_lectures">
+                                        <div class="card_description">
+                                            <span>Открытые лекции</span>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
-                            
+
                         </div>
 
                     </div>
@@ -147,6 +161,128 @@
                 </div>
             </div>
         </div>
+        <!-- Слайдер: -->
+        <div class="itc-slider" data-slider="itc-slider" data-loop="true" data-swipe="true">
+            <div class="itc-slider__wrapper">
+                <div class="itc-slider__items">
+                    <div class="itc-slider__item">
+                        <div class="productslider_block">
+                            <h2 class="slider_title_product" id="consultations">Индивидуальные сеансы</h2>
+                            <div class="slider_product_container">
+                                <img src="/img/consultations_img.jpg" alt="Индивидуальные сеансы" class="product_img">
+                                <div class="product_text">
+                                    <span>Индивидуальный сеанс – на нём присутствуете только Вы и Психолог.<br>
+                                        Продолжительность сеанса – 60 минут.<br>
+                                        Количество встреч определяется индивидуально, с учетом запроса клиента.<br>
+                                        Стоимость – 5 000,00 руб./сеанс.<br>
+                                        <div class="space"> </div>
+                                        <button><a href="#registration">Для записи нажмите сюда</a></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itc-slider__item">
+                        <div class="productslider_block">
+                            <h2 class="slider_title_product" id="group_classes">Групповые сеансы</h2>
+                            <div class="slider_product_container">
+                                <img src="/img/group_classes_img.jpeg" alt="Групповые сеансы" class="product_img">
+                                <div class="product_text">
+                                    <span>На групповом сеансе присутствуете Вы, психолог и другие члены группы.<br>
+                                        Общее количество участников (включая психолога) – 12 человек.<br>
+                                        Продолжительность сеанса – 90 минут.<br>
+                                        Количество встреч фиксировано – всего в курсе групповых сеансов 14 встреч<br>
+                                        Перед включением в группу необходимо пройти собеседование, для включения в её
+                                        состав (все группы формируются с учетом определенной тематики запросов, возраста
+                                        и пола)<br>
+                                        Стоимость – 2 500 руб./сеанс.<br>
+                                        <div class="space"> </div>
+                                        <button><a href="#registration">Для записи нажмите сюда</a></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itc-slider__item">
+                        <div class="productslider_block">
+                            <h2 class="slider_title_product" id="family_therapy">Семейные сеансы</h2>
+                            <div class="slider_product_container">
+                                <img src="/img/consultations_img.jpg" alt="Семейные сеансы" class="product_img">
+                                <div class="product_text">
+                                    <span>Семья – это система, которую составляют минимум два человека. Однако для того,
+                                        чтобы стать клиентом данного вида сеансов, вам необязательно иметь семью в
+                                        классическом понимании этого слова (зарегистрированный брак, дети и т.д.). Этот
+                                        вид сеансов для Вас, если у Вас есть партнер, с которым Вы хотите сделать
+                                        отношения ярче и богаче, либо решить насущные проблемы (конфликты, отсутствие
+                                        влечения и т.д.).<br>
+                                        Общее количество участников (без учета психолога) – от 2 человек. Возможно
+                                        большее количество участников, если того требует структура семейной системы.<br>
+                                        Продолжительность сеанса – 90 минут.<br>
+                                        Стоимость – 6 000,00 руб./сеанс<br>
+                                        <div class="space"> </div>
+                                        <button><a href="#registration">Для записи нажмите сюда</a></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itc-slider__item">
+                        <div class="productslider_block">
+                            <h2 class="slider_title_product" id="bootcamp">Bootsession</h2>
+                            <div class="slider_product_container">
+                                <img src="/img/bootcamp_img.png" alt="Bootsession сеанс" class="product_img">
+                                <div class="product_text">
+                                    <span>Bootsession предполагает сочетание индивидуального и группового формата
+                                        сеанса. Происходит чередование индивидуального и группового сеансов.<br>
+                                        Bootsession – формат поделен на циклы. Один цикл – это один индивидуальный и
+                                        один групповой сеансы.<br>
+                                        Продолжительность сеанса – 60 минут при индивидуальной работе и 90 минут при
+                                        групповой.<br>
+                                        Количество циклов фиксировано – всего 20 циклов (10 индивидуальных и 10
+                                        групповых сеансов).<br>
+                                        Перед включением в bootsession сеанс необходимо пройти собеседование, для
+                                        включения в состав (все группы формируются с учетом определенной тематики
+                                        запросов, возраста и пола)<br>
+                                        Стоимость – 3 500,00 руб./цикл<br>
+                                        <div class="space"> </div>
+                                        <button><a href="#registration">Для записи нажмите сюда</a></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itc-slider__item">
+                        <div class="productslider_block">
+                            <h2 class="slider_title_product" id="lectures">Открытые лекции</h2>
+                            <div class="slider_product_container">
+                                <img src="/img/lectures_img.jpg" alt="Открытые лекции" class="product_img">
+                                <div class="product_text">
+                                    <span>Я регулярно провожу открытые лекции по PersonaBuilding.<br>
+                                        На лекциях я рассказываю о PersonaBuilding, рассказываю о том, как решить
+                                        типичные проблемы, связанные с отношениями, уверенностью в себе и о много чем
+                                        еще полезном и интересном.<br>
+                                        Участие абсолютно бесплатно.<br>
+                                        <div class="space"> </div>
+                                        <button><a href="#registration">Для записи нажмите сюда</a></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="itc-slider__item" style="display: none">
+                </div> -->
+                </div>
+            </div>
+            <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+            <button class="itc-slider__btn itc-slider__btn_prev"></button>
+            <button class="itc-slider__btn itc-slider__btn_next"></button>
+        </div>
+
+
+
+
+
+
 
 
 
@@ -193,18 +329,18 @@
                 <p><a href="tel:+79161638436" class="tel">+7 (916) 163 84 36</a></p>
                 <p><a href="mailto:mail@mail.ru" class="e-mail">mail@mail.ru</a></p>
                 <p class="contacts_media">
-                        <a href="#">
-                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-vk" aria-hidden="true"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-telegram" aria-hidden="true"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                        </a>
+                    <a href="#">
+                        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-vk" aria-hidden="true"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-telegram" aria-hidden="true"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
                 </p>
             </div>
         </div>
@@ -212,6 +348,11 @@
 
 
     </main>
+
+
+    <script src="js/itc-slider.min.js"></script>
+
+
 
 
     <script src="js/cleave.min.js"></script>
@@ -222,173 +363,6 @@
             phone: true,
             phoneRegionCode: 'ru'
         });
-    </script>
-
-    <script>
-        document.body.querySelector('.consultations').addEventListener('click', function () {
-            let block = document.body.querySelector('.photo_consultations_closed')
-            block.classList.add("photo_consultations_open")
-            block.classList.remove("card_photo")
-            block.innerHTML = `
-                <div class="productanimation_block">
-                    <div class="closing_container">
-                        <button class="closing closing_consultations">&#10006</button>
-                    </div>
-                    <h2 class="animation_title_product">Индивидуальные сеансы</h2>
-                    <div class="animation_product_container">
-                        <div class="product_text">
-                            <span>Индивидуальный сеанс – на нём присутствуете только Вы и Психолог.<br>
-                            Продолжительность сеанса – 60 минут.<br>
-                            Количество встреч определяется индивидуально, с учетом запроса клиента.<br>
-                            Стоимость – 5 000,00 руб./сеанс.<br>
-                            <button><a href="#registration">Для записи нажмите сюда</a></button></span>
-                        </div>
-                        <img src="/img/consultations_img.jpg" alt="Индивидуальные сеансы" class="product_img">
-                    </div>
-                </div>
-                `
-
-        }
-        )
-        document.body.querySelector('.group_classes').addEventListener('click', function () {
-            let block = document.body.querySelector('.photo_group_classes_closed')
-            block.classList.add("photo_group_classes_open")
-            block.classList.remove("card_photo")
-            block.innerHTML = `
-                <div class="productanimation_block">
-                    <div class="closing_container">
-                        <button class="closing closing_group_classes">&#10006</button>
-                    </div>
-                    <h2 class="animation_title_product">Групповые сеансы</h2>
-                    <div class="animation_product_container">
-                        <div class="product_text">
-                            <span>На групповом сеансе присутствуете Вы, психолог и другие члены группы.<br>
-                            Общее количество участников (включая психолога) – 12 человек.<br>
-                            Продолжительность сеанса – 90 минут.<br>
-                            Количество встреч фиксировано – всего в курсе групповых сеансов 14 встреч<br>
-                            Перед включением в группу необходимо пройти собеседование, для включения в её состав (все группы формируются с учетом определенной тематики запросов, возраста и пола)<br>
-                            Стоимость – 2 500 руб./сеанс.<br>
-                            <button><a href="#registration">Для записи нажмите сюда</a></button></span>
-                        </div>
-                        <img src="/img/group_classes_img.jpeg" alt="Групповые сеансы" class="product_img">
-                    </div>
-                </div>
-                `
-        }
-        )
-        document.body.querySelector('.bootcamp').addEventListener('click', function () {
-            let block = document.body.querySelector('.photo_bootcamp_closed')
-            block.classList.add("photo_bootcamp_open")
-            block.classList.remove("card_photo")
-            block.innerHTML = `
-                <div class="productanimation_block">
-                    <div class="closing_container">
-                        <button class="closing closing_bootcamp">&#10006</button>
-                    </div>
-                    <h2 class="animation_title_product animation_title_product_bootcamp">Bootsession</h2>
-                    <div class="animation_product_container animation_product_container_bootcamp">
-                        <div class="product_text product_text_bootcamp">
-                            <span>Bootsession предполагает сочетание индивидуального и группового формата сеанса. Происходит чередование индивидуального и группового сеансов.<br>
-                            Bootsession – формат поделен на циклы. Один цикл – это один индивидуальный и один групповой сеансы.<br>
-                            Продолжительность сеанса – 60 минут при индивидуальной работе и 90 минут при групповой.<br>
-                            Количество циклов фиксировано – всего 20 циклов (10 индивидуальных и 10 групповых сеансов).<br>
-                            Перед включением в bootsession сеанс необходимо пройти собеседование, для включения в состав (все группы формируются с учетом определенной тематики запросов, возраста и пола)<br>
-                            Стоимость – 3 500,00 руб./цикл<br>
-                            <button><a href="#registration">Для записи нажмите сюда</a></button></span>
-                        </div>
-                        <img src="/img/bootcamp_img.png" alt="Bootsession сеанс" class="product_img">
-                    </div>
-                </div>
-                `
-        }
-        )
-        document.body.querySelector('.lectures').addEventListener('click', function () {
-            let block = document.body.querySelector('.photo_lectures_closed')
-            block.classList.add("photo_lectures_open")
-            block.classList.remove("card_photo")
-            block.innerHTML = `
-                <div class="productanimation_block">
-                    <div class="closing_container">
-                        <button class="closing closing_lectures">&#10006</button>
-                    </div>
-                    <h2 class="animation_title_product">Открытые лекции</h2>
-                    <div class="animation_product_container">
-                        <div class="product_text">
-                            <span>Я регулярно провожу открытые лекции по PersonaBuilding.<br>
-                            На лекциях я рассказываю о PersonaBuilding, рассказываю о том, как решить типичные проблемы, связанные с отношениями, уверенностью в себе и о много чем еще полезном и интересном.<br>
-                            Участие абсолютно бесплатно.<br>
-                            <button><a href="#registration">Для записи нажмите сюда</a></button></span>
-                        </div>
-                        <img src="/img/lectures_img.jpg" alt="Открытые лекции" class="product_img">
-                    </div>
-                </div>
-                `
-        }
-        )
-        document.body.querySelector('.family_therapy').addEventListener('click', function () {
-            let block = document.body.querySelector('.photo_family_therapy_closed')
-            block.classList.add("photo_family_therapy_open")
-            block.classList.remove("card_photo")
-            block.innerHTML = `
-                <div class="productanimation_block">
-                    <div class="closing_container">
-                        <button class="closing closing_family_therapy">&#10006</button>
-                    </div>
-                    <h2 class="animation_title_product">Семейные сеансы</h2>
-                    <div class="animation_product_container">
-                        <div class="product_text">
-                            <span>Семья – это система, которую составляют минимум два человека. Однако для того, чтобы стать клиентом данного вида сеансов, вам необязательно иметь семью в классическом понимании этого слова (зарегистрированный брак, дети и т.д.). Этот вид сеансов для Вас, если у Вас есть партнер, с которым Вы хотите сделать отношения ярче и богаче, либо решить насущные проблемы (конфликты, отсутствие влечения и т.д.).<br>
-                            Общее количество участников (без учета психолога) – от 2 человек. Возможно большее количество участников, если того требует структура семейной системы.<br>
-                            Продолжительность сеанса – 90 минут.<br>
-                            Стоимость – 6 000,00 руб./сеанс<br>
-                            <button><a href="#registration">Для записи нажмите сюда</a></button></span>
-                        </div>
-                        <img src="/img/consultations_img.jpg" alt="Семейные сеансы" class="product_img">
-                    </div>
-                </div>
-                `
-        }
-        )
-
-        document.body.onclick = function (e) {
-            if (e.target.classList.contains('closing_consultations')) {
-                let block = document.body.querySelector('.photo_consultations_closed')
-                block.innerHTML = ''
-                block.classList.add("card_photo")
-                block.classList.remove("photo_consultations_open")
-            }
-
-            if (e.target.classList.contains('closing_group_classes')) {
-                let block = document.body.querySelector('.photo_group_classes_closed')
-                block.innerHTML = ''
-                block.classList.add("card_photo")
-                block.classList.remove("photo_group_classes_open")
-            }
-
-            if (e.target.classList.contains('closing_bootcamp')) {
-                let block = document.body.querySelector('.photo_bootcamp_closed')
-                block.innerHTML = ''
-                block.classList.add("card_photo")
-                block.classList.remove("photo_bootcamp_open")
-            }
-
-            if (e.target.classList.contains('closing_lectures')) {
-                let block = document.body.querySelector('.photo_lectures_closed')
-                block.innerHTML = ''
-                block.classList.add("card_photo")
-                block.classList.remove("photo_lectures_open")
-            }
-
-            if (e.target.classList.contains('closing_family_therapy')) {
-                let block = document.body.querySelector('.photo_family_therapy_closed')
-                block.innerHTML = ''
-                block.classList.add("card_photo")
-                block.classList.remove("photo_family_therapy_open")
-            }
-
-        }
-
-
     </script>
 </body>
 
