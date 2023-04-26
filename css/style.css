@@ -472,9 +472,6 @@ div .main_h {
         justify-content: center;
         width: 700px;
     }
-    .card {
-        /* width: 33%; */
-    }
     .card_photo {
         height: 21vw;
         width: 21vw;
@@ -759,6 +756,7 @@ div .main_h {
 .registration {
     width: 100%;    
     color: white;
+    position: relative;
 }
 
 .registration_block {
@@ -769,6 +767,23 @@ div .main_h {
     width: 100%;
     margin: 5vh 0;
     background-color: rgb(20, 174, 207);
+}
+form::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(46, 46, 46, 0.5) url("../img/loading.gif") center / 50px no-repeat;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease 0s;
+}
+
+form.sending::after {
+    opacity: 1;
+    visibility: visible;
 }
 
 .title_registration {
@@ -857,9 +872,8 @@ div .main_h {
 
 
 ._error {
-    border: 200px solid red;
-    box-shadow: 0 0 20px red;
-    width: 5000px;
+    /* border: 2px solid red; */
+    box-shadow: 0 0 10px red;
 }
 
 .registration_row {
