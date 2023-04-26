@@ -289,10 +289,10 @@
         <div class="registration">
             <div class="registration_block">
                 <h2 class="title_registration">Запись на сеансы</h2>
-                <form action="registration.php" method="post" class="registration_form">
+                <form action="#" class="registration_form" id="form">
                     <div class="type_row">
                         <!-- <span>Тип продукта:</span> -->
-                        <select name="product_type" id="" class="product_type">
+                        <select name="product_type" id="" class="product_type _req">
                             <option disabled selected>Выберите тип сеанса</option>
                             <option value="consultations">Индивидуальный сеанс</option>
                             <option value="group_classes">Групповой сеанс</option>
@@ -303,15 +303,15 @@
                     </div>
                     <div class="fullname_row">
                         <!-- <span>ФИО:</span> -->
-                        <input type="text" class="fullname" placeholder="Укажите ваше ФИО" name="fullname">
+                        <input type="text" class="fullname _req" placeholder="Укажите ваше ФИО" name="fullname">
                     </div>
                     <div class="phone_row">
                         <!-- <span>Телефон:</span> -->
-                        <input type="text" class="phone" placeholder="Укажите контактный телефон" name="phone">
+                        <input type="text" class="phone _req" placeholder="Укажите контактный телефон" name="phone">
                     </div>
                     <div class="email_row">
                         <!-- <span>E-mail:</span> -->
-                        <input type="email" class="email" placeholder="Укажите e-mail" name="email">
+                        <input type="email" class="email _req" placeholder="Укажите e-mail" name="email">
                     </div>
                     <div class="registration_row">
                         <button type="submit" class="registration_button" name="send">Подать заявку</button>
@@ -364,6 +364,7 @@
             phoneRegionCode: 'ru'
         });
     </script>
+    <script src="js/validate.js"></script>
 </body>
 
 </html>

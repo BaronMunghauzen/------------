@@ -855,6 +855,13 @@ div .main_h {
     border: 3px solid #323232;
 }
 
+
+._error {
+    border: 200px solid red;
+    box-shadow: 0 0 20px red;
+    width: 5000px;
+}
+
 .registration_row {
     display: flex;
     justify-content: center;
