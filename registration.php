@@ -4,6 +4,7 @@
     $fullname = $_POST['fullname'];
     $phone = $_POST['phone'];
     $email = $_POST['email'];
+
     
 
     $error = '';
@@ -23,8 +24,9 @@
 
     $subject = "=?utf-8?B?".base64_encode("Новая запись на сеанс по $product_type")."?=";
     $headers = "From: $email\r\nReply_to: $email\r\nContent-type: text/html;charset=utf-8\r\n";
+    $message = "ФИО : $fullname\r\nТелефон: $phone\r\nE-mail: $email";
 
-    mail('maglatow@yandex.ru', $subject, $message, $headers);
+    mail('Grisha.maglatov@yandex.ru', $subject, $message, $headers);
 
     header('Location: /index.php')
 
