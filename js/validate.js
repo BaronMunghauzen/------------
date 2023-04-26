@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (response.ok) {
                 let result = await response.json();
                 alert(result.message);
-                form.reset()
+                form.reset();
                 form.classList.remove('sending');
             } else {
                 alert("Ошибка. Попробуйте еще раз.");
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             alert('Заполните обязательные поля');
         }
-    }
+        }
 
     function formValidate(form) {
         let error = 0;
@@ -43,15 +43,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (emailTest(input)) {
                     formAddError(input);
                     error++;
-                    alert('email');
+                    // alert('email');
                 }
             } 
             if (input.value == '') {
                 formAddError(input);
                 error++;
-                alert('input');
+                // alert('input');
             }
-            return error;
+             
         }
     }
 

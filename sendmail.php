@@ -2,8 +2,8 @@
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
 
-    require 'phpmailer/src/exception.php';
-    require 'phpmailer/src/PHPMailer.php';
+    require 'PHPMailer/src/Exception.php';
+    require 'PHPMailer/src/PHPMailer.php';
 
     $mail = new PHPMailer(true);
     $mail->CharSet = 'UTF-8';
@@ -11,9 +11,9 @@
     $mail->isHTML(true);
 
     //От кого письмо
-    $mail->setFrom('Grisha.maglatov@yandex.ru', 'Григорий Маглатов');
+    $mail->setFrom('maglatow@yandex.ru', 'Григорий Маглатов');
     //Кому отправить
-    $mail->addAddress('Grisha.maglatov@yandex.ru');
+    $mail->addAddress('maglatow@yandex.ru');
     //Тема письма
     $mail->Subject = "Новая регистрация на мероприятие";
 
@@ -44,7 +44,7 @@
     if(!$mail->send()) {
         $message = 'Ошибка';
     } else {
-        $message = 'Данные отправлены! Скоро с Вами свяжется наш специлист.';
+        $message = 'Данные отправлены! Скоро с Вами свяжется наш специалист.';
     }
 
     $response = ['message' =>$message];
