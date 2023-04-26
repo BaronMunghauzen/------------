@@ -176,7 +176,7 @@
                                         Количество встреч определяется индивидуально, с учетом запроса клиента.<br>
                                         <!-- Стоимость – 5 000,00 руб./сеанс.<br> -->
                                         <div class="space"> </div>
-                                        <button><a href="#registration">Для записи нажмите сюда</a></button>
+                                        <button><a href="#registration">Записаться</a></button>
                                     </span>
                                 </div>
                             </div>
@@ -197,7 +197,7 @@
                                         и пола)<br>
                                         <!-- Стоимость – 2 500 руб./сеанс.<br> -->
                                         <div class="space"> </div>
-                                        <button><a href="#registration">Для записи нажмите сюда</a></button>
+                                        <button><a href="#registration">Записаться</a></button>
                                     </span>
                                 </div>
                             </div>
@@ -220,7 +220,7 @@
                                         Продолжительность сеанса – 90 минут.<br>
                                         <!-- Стоимость – 6 000,00 руб./сеанс<br> -->
                                         <div class="space"> </div>
-                                        <button><a href="#registration">Для записи нажмите сюда</a></button>
+                                        <button><a href="#registration">Записаться</a></button>
                                     </span>
                                 </div>
                             </div>
@@ -245,7 +245,7 @@
                                         запросов, возраста и пола)<br>
                                         <!-- Стоимость – 3 500,00 руб./цикл<br> -->
                                         <div class="space"> </div>
-                                        <button><a href="#registration">Для записи нажмите сюда</a></button>
+                                        <button><a href="#registration">Записаться</a></button>
                                     </span>
                                 </div>
                             </div>
@@ -263,7 +263,7 @@
                                         еще полезном и интересном.<br>
                                         Участие абсолютно бесплатно.<br>
                                         <div class="space"> </div>
-                                        <button><a href="#registration">Для записи нажмите сюда</a></button>
+                                        <button><a href="#registration">Записаться</a></button>
                                     </span>
                                 </div>
                             </div>
@@ -286,13 +286,13 @@
 
 
         <div id="registration"></div>
-        <div class="registration" >
+        <div class="registration">
             <div class="registration_block">
                 <h2 class="title_registration">Запись на сеансы</h2>
-                <form action="" class="registration_form">
+                <form action="registration.php" method="post" class="registration_form">
                     <div class="type_row">
                         <!-- <span>Тип продукта:</span> -->
-                        <select name="" id="" class="product_type">
+                        <select name="product_type" id="" class="product_type">
                             <option disabled selected>Выберите тип сеанса</option>
                             <option value="consultations">Индивидуальный сеанс</option>
                             <option value="group_classes">Групповой сеанс</option>
@@ -303,18 +303,18 @@
                     </div>
                     <div class="fullname_row">
                         <!-- <span>ФИО:</span> -->
-                        <input type="text" class="fullname" placeholder="Укажите ваше ФИО" pattern="[а-я]">
+                        <input type="text" class="fullname" placeholder="Укажите ваше ФИО" name="fullname">
                     </div>
                     <div class="phone_row">
                         <!-- <span>Телефон:</span> -->
-                        <input type="text" class="phone" placeholder="Укажите контактный телефон">
+                        <input type="text" class="phone" placeholder="Укажите контактный телефон" name="phone">
                     </div>
                     <div class="email_row">
                         <!-- <span>E-mail:</span> -->
-                        <input type="email" class="email" placeholder="Укажите e-mail">
+                        <input type="email" class="email" placeholder="Укажите e-mail" name="email">
                     </div>
                     <div class="registration_row">
-                        <button class="registration_button">Подать заявку</button>
+                        <button type="submit" class="registration_button" name="send">Подать заявку</button>
                     </div>
                 </form>
             </div>

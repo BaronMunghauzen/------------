@@ -463,7 +463,6 @@ div .main_h {
     }
     .products_text {
         padding-top: 4vh;
-        text-align: center;
         margin-bottom: 0px;
         font-size: 22px;
     }
@@ -499,7 +498,6 @@ div .main_h {
     }
     .products_text {
         padding-top: 4vh;
-        text-align: center;
         line-height: 20px;
         margin-bottom: 0px;
         font-size: 18px;
@@ -536,7 +534,6 @@ div .main_h {
     }
     .products_text {
         padding-top: 4vh;
-        text-align: center;
         line-height: 20px;
         margin-bottom: 0px;
         font-size: 18px;
@@ -574,7 +571,6 @@ div .main_h {
     }
     .products_text {
         padding-top: 4vh;
-        text-align: center;
         line-height: 20px;
         margin-bottom: 0px;
         font-size: 18px;
@@ -612,7 +608,6 @@ div .main_h {
     }
     .products_text {
         padding-top: 4vh;
-        text-align: center;
         line-height: 20px;
         margin-bottom: 0px;
         font-size: 18px;
@@ -672,7 +667,7 @@ div .main_h {
 }
 .product_text {
     display: flex;
-    text-align: center;
+    text-align: justify;
     font-size: 27px;
     line-height: 32px;
     max-width: 90%;
