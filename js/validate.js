@@ -8,10 +8,10 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
 
         let error = formValidate(form);
-
+        alert(error);
+        
         let formData = new FormData(form);
 
-        alert(error);
         if (error === 0) {
             form.classList.add('sending');
             let response = await fetch ('sendmail.php', {
