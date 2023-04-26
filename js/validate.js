@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         let formData = new FormData(form);
 
+        alert(error);
         if (error === 0) {
             form.classList.add('sending');
             let response = await fetch ('sendmail.php', {
@@ -51,8 +52,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 error++;
                 // alert('input');
             }
-             
         }
+        alert(error);
+        return error;
     }
 
     function formAddError(input) {
