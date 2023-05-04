@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Григорий Маглатов</title>
+    <link rel="icon" href="img/ico.png" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/itc-slider.min.css">
@@ -29,16 +30,16 @@
             </div>
         </div>
         <div class="media">
-            <a href="#">
+            <a href="https://www.youtube.com/@maglatovgd">
                 <i class="fa fa-youtube-play" aria-hidden="true"></i>
             </a>
-            <a href="#">
+            <a href="https://vk.com/maglatovgd">
                 <i class="fa fa-vk" aria-hidden="true"></i>
             </a>
-            <a href="#">
+            <a href="https://t.me/maglatovgd">
                 <i class="fa fa-telegram" aria-hidden="true"></i>
             </a>
-            <a href="#">
+            <a href="https://instagram.com/maglatovgd?igshid=YmMyMTA2M2Y=">
                 <i class="fa fa-instagram" aria-hidden="true"></i>
             </a>
         </div>
@@ -61,7 +62,7 @@
                         сконструировали и построили. И если все сферы человеческой жизни проходят сквозь этот фильтр –
                         человеку необходимо обзавестись самым мощным из возможных фильтров.<br>
                         <div class="space"> </div>
-                        Я занимаюсь своим ремеслом почти десять лет. Мой опыт позволяет сказать, что именно Ваша
+                        Я занимаюсь своим ремеслом почти семь лет. Мой опыт позволяет сказать, что именно Ваша
                         личность (и только она) является источником Ваших страданий, и в тоже время именно Ваша личность
                         может быть самым ценным и благостным, что Вы имеете. Я могу быть тем проводником, который
                         позволит Вам построить такую личность, вместе с которой в Вашу жизнь придут вещи, которых вы
@@ -108,7 +109,7 @@
 
                             <div class="card consultations">
                                 <a href="#slider">
-                                    <div class="card_photo">
+                                    <div class="card_photo photo_consulatations">
                                         <div class="card_description">
                                             <span>Индивидуальные сеансы</span>
                                         </div>
@@ -118,7 +119,7 @@
 
                             <div class="card group_classes">
                                 <a href="#slider">
-                                    <div class="card_photo">
+                                    <div class="card_photo photo_group_classes">
                                         <div class="card_description">
                                             <span>Групповые сеансы</span>
                                         </div>
@@ -128,7 +129,7 @@
 
                             <div class="card family_therapy">
                                 <a href="#slider">
-                                    <div class="card_photo">
+                                    <div class="card_photo photo_family_therapy">
                                         <div class="card_description">
                                             <span>Семейные сеансы</span>
                                         </div>
@@ -137,7 +138,7 @@
                             </div>
                             <div class="card bootcamp">
                                 <a href="#slider">
-                                    <div class="card_photo">
+                                    <div class="card_photo photo_bootcamp">
                                         <div class="card_description">
                                             <span>Bootsession</span>
                                         </div>
@@ -162,14 +163,14 @@
             </div>
         </div>
         <!-- Слайдер: -->
-        <div class="itc-slider" data-slider="itc-slider" data-swipe="true" loop="true" id="slider">
+        <div class="itc-slider" data-slider="itc-slider" data-swipe="true" data-loop="true" id="slider">
             <div class="itc-slider__wrapper">
                 <div class="itc-slider__items">
                     <div class="itc-slider__item" id="consultations">
                         <div class="productslider_block">
                             <h2 class="slider_title_product">Индивидуальные сеансы</h2>
                             <div class="slider_product_container">
-                                <img src="img/consultations_img.jpg" alt="Индивидуальные сеансы" class="product_img">
+                                <img src="img/products/consultations.JPG" alt="Индивидуальные сеансы" class="product_img">
                                 <div class="product_text">
                                     <span>Индивидуальный сеанс – на нём присутствуете только Вы и Психолог.<br>
                                         Продолжительность сеанса – 60 минут.<br>
@@ -186,7 +187,7 @@
                         <div class="productslider_block">
                             <h2 class="slider_title_product">Групповые сеансы</h2>
                             <div class="slider_product_container">
-                                <img src="img/group_classes_img.jpeg" alt="Групповые сеансы" class="product_img">
+                                <img src="img/products/group_classes.jpg" alt="Групповые сеансы" class="product_img">
                                 <div class="product_text">
                                     <span>На групповом сеансе присутствуете Вы, психолог и другие члены группы.<br>
                                         Общее количество участников (включая психолога) – 12 человек.<br>
@@ -207,7 +208,7 @@
                         <div class="productslider_block">
                             <h2 class="slider_title_product">Семейные сеансы</h2>
                             <div class="slider_product_container">
-                                <img src="img/consultations_img.jpg" alt="Семейные сеансы" class="product_img">
+                                <img src="img/products/family_therapy.JPG" alt="Семейные сеансы" class="product_img">
                                 <div class="product_text">
                                     <span>Семья – это система, которую составляют минимум два человека. Однако для того,
                                         чтобы стать клиентом данного вида сеансов, вам необязательно иметь семью в
@@ -230,7 +231,7 @@
                         <div class="productslider_block">
                             <h2 class="slider_title_product">Bootsession</h2>
                             <div class="slider_product_container">
-                                <img src="img/bootcamp_img.png" alt="Bootsession сеанс" class="product_img">
+                                <img src="img/products/bootcamp.png" alt="Bootsession сеанс" class="product_img">
                                 <div class="product_text">
                                     <span>Bootsession предполагает сочетание индивидуального и группового формата
                                         сеанса. Происходит чередование индивидуального и группового сеансов.<br>
@@ -255,7 +256,7 @@
                         <div class="productslider_block">
                             <h2 class="slider_title_product">Открытые лекции</h2>
                             <div class="slider_product_container">
-                                <img src="img/products/IMG_3190.jpg" alt="Открытые лекции" class="product_img">
+                                <img src="img/products/lectures.jpg" alt="Открытые лекции" class="product_img">
                                 <div class="product_text">
                                     <span>Я регулярно провожу открытые лекции по PersonaBuilding.<br>
                                         На лекциях я рассказываю о PersonaBuilding, рассказываю о том, как решить
@@ -326,19 +327,19 @@
         <div class="contacts" id="contacts">
             <div class="contacts_block">
                 <p>Контакты:</p>
-                <p><a href="tel:+79161638436" class="tel">+7 (916) 163 84 36</a></p>
-                <p><a href="mailto:mail@mail.ru" class="e-mail">mail@mail.ru</a></p>
+                <p><a href="tel:+79853469547" class="tel">+7 (985) 346 95 47</a></p>
+                <p><a href="mailto:info@maglatovgd.com" class="e-mail">info@maglatovgd.com</a></p>
                 <p class="contacts_media">
-                    <a href="#">
+                    <a href="https://www.youtube.com/@maglatovgd">
                         <i class="fa fa-youtube-play" aria-hidden="true"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://vk.com/maglatovgd">
                         <i class="fa fa-vk" aria-hidden="true"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://t.me/maglatovgd">
                         <i class="fa fa-telegram" aria-hidden="true"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://instagram.com/maglatovgd?igshid=YmMyMTA2M2Y=">
                         <i class="fa fa-instagram" aria-hidden="true"></i>
                     </a>
                 </p>

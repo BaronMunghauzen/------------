@@ -11,9 +11,9 @@
     $mail->isHTML(true);
 
     //От кого письмо
-    $mail->setFrom('maglatow@yandex.ru', 'Григорий Маглатов');
+    $mail->setFrom('Grisha.maglatov@yandex.ru', 'Григорий Маглатов');
     //Кому отправить
-    $mail->addAddress('maglatow@yandex.ru');
+    $mail->addAddress('Grisha.maglatov@yandex.ru');
     //Тема письма
     $mail->Subject = "Новая регистрация на мероприятие";
 

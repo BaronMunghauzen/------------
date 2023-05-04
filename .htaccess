@@ -1,1 +1,3 @@
 RewriteRule ^index?$ index.php [NC,L]
+
+php_flag opcache.enable Off

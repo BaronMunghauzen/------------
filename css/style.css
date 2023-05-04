@@ -28,7 +28,7 @@ body {
 header {
     width: 100%;
     height: 100vh;
-    background-image: url('../img/change.jpg');
+    background-image: url('../img/main.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -438,8 +438,33 @@ div .main_h {
     height: 18vw;
     width: 18vw;
 }
+
+.photo_consulatations {
+    background-image: url('../img/products/consultations.JPG');
+    background-size: cover;
+    background-position: center;
+}
+
+.photo_group_classes {
+    background-image: url('../img/products/group_classes.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.photo_family_therapy {
+    background-image: url('../img/products/family_therapy.JPG');
+    background-size: cover;
+    background-position: center;
+}
+
+.photo_bootcamp {
+    background-image: url('../img/products/bootcamp.png');
+    background-size: cover;
+    background-position: center;
+}
+
 .photo_lectures {
-    background-image: url('../img/products/IMG_3190.jpg');
+    background-image: url('../img/products/lectures.jpg');
     background-size: cover;
     background-position: center;
 }

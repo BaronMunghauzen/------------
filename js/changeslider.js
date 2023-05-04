@@ -35,7 +35,7 @@ let for_consultations = `<div class="itc-slider__item" id="consultations">
 <div class="productslider_block">
     <h2 class="slider_title_product">Индивидуальные сеансы</h2>
     <div class="slider_product_container">
-        <img src="img/consultations_img.jpg" alt="Индивидуальные сеансы" class="product_img">
+        <img src="img/products/consultations.JPG" alt="Индивидуальные сеансы" class="product_img">
         <div class="product_text">
             <span>Индивидуальный сеанс – на нём присутствуете только Вы и Психолог.<br>
                 Продолжительность сеанса – 60 минут.<br>
@@ -52,7 +52,7 @@ let for_consultations = `<div class="itc-slider__item" id="consultations">
 <div class="productslider_block">
     <h2 class="slider_title_product">Групповые сеансы</h2>
     <div class="slider_product_container">
-        <img src="img/group_classes_img.jpeg" alt="Групповые сеансы" class="product_img">
+        <img src="img/products/group_classes.jpg" alt="Групповые сеансы" class="product_img">
         <div class="product_text">
             <span>На групповом сеансе присутствуете Вы, психолог и другие члены группы.<br>
                 Общее количество участников (включая психолога) – 12 человек.<br>
@@ -73,7 +73,7 @@ let for_consultations = `<div class="itc-slider__item" id="consultations">
 <div class="productslider_block">
     <h2 class="slider_title_product">Семейные сеансы</h2>
     <div class="slider_product_container">
-        <img src="img/consultations_img.jpg" alt="Семейные сеансы" class="product_img">
+        <img src="img/products/family_therapy.JPG" alt="Семейные сеансы" class="product_img">
         <div class="product_text">
             <span>Семья – это система, которую составляют минимум два человека. Однако для того,
                 чтобы стать клиентом данного вида сеансов, вам необязательно иметь семью в
@@ -96,7 +96,7 @@ let for_consultations = `<div class="itc-slider__item" id="consultations">
 <div class="productslider_block">
     <h2 class="slider_title_product">Bootsession</h2>
     <div class="slider_product_container">
-        <img src="img/bootcamp_img.png" alt="Bootsession сеанс" class="product_img">
+        <img src="img/products/bootcamp.png" alt="Bootsession сеанс" class="product_img">
         <div class="product_text">
             <span>Bootsession предполагает сочетание индивидуального и группового формата
                 сеанса. Происходит чередование индивидуального и группового сеансов.<br>
@@ -121,7 +121,7 @@ let for_consultations = `<div class="itc-slider__item" id="consultations">
 <div class="productslider_block">
     <h2 class="slider_title_product">Открытые лекции</h2>
     <div class="slider_product_container">
-        <img src="img/products/IMG_3190.jpg" alt="Открытые лекции" class="product_img">
+        <img src="img/products/lectures.jpg" alt="Открытые лекции" class="product_img">
         <div class="product_text">
             <span>Я регулярно провожу открытые лекции по PersonaBuilding.<br>
                 На лекциях я рассказываю о PersonaBuilding, рассказываю о том, как решить
@@ -140,7 +140,7 @@ let for_group_classes = `<div class="itc-slider__item" id="group_classes">
 <div class="productslider_block">
     <h2 class="slider_title_product">Групповые сеансы</h2>
     <div class="slider_product_container">
-        <img src="img/group_classes_img.jpeg" alt="Групповые сеансы" class="product_img">
+        <img src="img/products/group_classes.jpg" alt="Групповые сеансы" class="product_img">
         <div class="product_text">
             <span>На групповом сеансе присутствуете Вы, психолог и другие члены группы.<br>
                 Общее количество участников (включая психолога) – 12 человек.<br>
@@ -161,7 +161,7 @@ let for_group_classes = `<div class="itc-slider__item" id="group_classes">
 <div class="productslider_block">
     <h2 class="slider_title_product">Семейные сеансы</h2>
     <div class="slider_product_container">
-        <img src="img/consultations_img.jpg" alt="Семейные сеансы" class="product_img">
+        <img src="img/products/family_therapy.JPG" alt="Семейные сеансы" class="product_img">
         <div class="product_text">
             <span>Семья – это система, которую составляют минимум два человека. Однако для того,
                 чтобы стать клиентом данного вида сеансов, вам необязательно иметь семью в
@@ -184,7 +184,7 @@ let for_group_classes = `<div class="itc-slider__item" id="group_classes">
 <div class="productslider_block">
     <h2 class="slider_title_product">Bootsession</h2>
     <div class="slider_product_container">
-        <img src="img/bootcamp_img.png" alt="Bootsession сеанс" class="product_img">
+        <img src="img/products/bootcamp.png" alt="Bootsession сеанс" class="product_img">
         <div class="product_text">
             <span>Bootsession предполагает сочетание индивидуального и группового формата
                 сеанса. Происходит чередование индивидуального и группового сеансов.<br>
@@ -209,7 +209,7 @@ let for_group_classes = `<div class="itc-slider__item" id="group_classes">
 <div class="productslider_block">
     <h2 class="slider_title_product">Открытые лекции</h2>
     <div class="slider_product_container">
-        <img src="img/products/IMG_3190.jpg" alt="Открытые лекции" class="product_img">
+        <img src="img/products/lectures.jpg" alt="Открытые лекции" class="product_img">
         <div class="product_text">
             <span>Я регулярно провожу открытые лекции по PersonaBuilding.<br>
                 На лекциях я рассказываю о PersonaBuilding, рассказываю о том, как решить
@@ -227,7 +227,7 @@ let for_group_classes = `<div class="itc-slider__item" id="group_classes">
 <div class="productslider_block">
     <h2 class="slider_title_product">Индивидуальные сеансы</h2>
     <div class="slider_product_container">
-        <img src="img/consultations_img.jpg" alt="Индивидуальные сеансы" class="product_img">
+        <img src="img/products/consultations.JPG" alt="Индивидуальные сеансы" class="product_img">
         <div class="product_text">
             <span>Индивидуальный сеанс – на нём присутствуете только Вы и Психолог.<br>
                 Продолжительность сеанса – 60 минут.<br>
@@ -245,7 +245,7 @@ let for_family_therapy = `<div class="itc-slider__item" id="family_therapy">
 <div class="productslider_block">
     <h2 class="slider_title_product">Семейные сеансы</h2>
     <div class="slider_product_container">
-        <img src="img/consultations_img.jpg" alt="Семейные сеансы" class="product_img">
+        <img src="img/products/family_therapy.JPG" alt="Семейные сеансы" class="product_img">
         <div class="product_text">
             <span>Семья – это система, которую составляют минимум два человека. Однако для того,
                 чтобы стать клиентом данного вида сеансов, вам необязательно иметь семью в
@@ -268,7 +268,7 @@ let for_family_therapy = `<div class="itc-slider__item" id="family_therapy">
 <div class="productslider_block">
     <h2 class="slider_title_product">Bootsession</h2>
     <div class="slider_product_container">
-        <img src="img/bootcamp_img.png" alt="Bootsession сеанс" class="product_img">
+        <img src="img/products/bootcamp.png" alt="Bootsession сеанс" class="product_img">
         <div class="product_text">
             <span>Bootsession предполагает сочетание индивидуального и группового формата
                 сеанса. Происходит чередование индивидуального и группового сеансов.<br>
@@ -293,7 +293,7 @@ let for_family_therapy = `<div class="itc-slider__item" id="family_therapy">
 <div class="productslider_block">
     <h2 class="slider_title_product">Открытые лекции</h2>
     <div class="slider_product_container">
-        <img src="img/products/IMG_3190.jpg" alt="Открытые лекции" class="product_img">
+        <img src="img/products/lectures.jpg" alt="Открытые лекции" class="product_img">
         <div class="product_text">
             <span>Я регулярно провожу открытые лекции по PersonaBuilding.<br>
                 На лекциях я рассказываю о PersonaBuilding, рассказываю о том, как решить
@@ -311,7 +311,7 @@ let for_family_therapy = `<div class="itc-slider__item" id="family_therapy">
 <div class="productslider_block">
     <h2 class="slider_title_product">Индивидуальные сеансы</h2>
     <div class="slider_product_container">
-        <img src="img/consultations_img.jpg" alt="Индивидуальные сеансы" class="product_img">
+        <img src="img/products/consultations.JPG" alt="Индивидуальные сеансы" class="product_img">
         <div class="product_text">
             <span>Индивидуальный сеанс – на нём присутствуете только Вы и Психолог.<br>
                 Продолжительность сеанса – 60 минут.<br>
@@ -328,7 +328,7 @@ let for_family_therapy = `<div class="itc-slider__item" id="family_therapy">
 <div class="productslider_block">
     <h2 class="slider_title_product">Групповые сеансы</h2>
     <div class="slider_product_container">
-        <img src="img/group_classes_img.jpeg" alt="Групповые сеансы" class="product_img">
+        <img src="img/products/group_classes.jpg" alt="Групповые сеансы" class="product_img">
         <div class="product_text">
             <span>На групповом сеансе присутствуете Вы, психолог и другие члены группы.<br>
                 Общее количество участников (включая психолога) – 12 человек.<br>
@@ -350,7 +350,7 @@ let for_bootcamp = `<div class="itc-slider__item" id="bootcamp">
 <div class="productslider_block">
     <h2 class="slider_title_product">Bootsession</h2>
     <div class="slider_product_container">
-        <img src="img/bootcamp_img.png" alt="Bootsession сеанс" class="product_img">
+        <img src="img/products/bootcamp.png" alt="Bootsession сеанс" class="product_img">
         <div class="product_text">
             <span>Bootsession предполагает сочетание индивидуального и группового формата
                 сеанса. Происходит чередование индивидуального и группового сеансов.<br>
@@ -375,7 +375,7 @@ let for_bootcamp = `<div class="itc-slider__item" id="bootcamp">
 <div class="productslider_block">
     <h2 class="slider_title_product">Открытые лекции</h2>
     <div class="slider_product_container">
-        <img src="img/products/IMG_3190.jpg" alt="Открытые лекции" class="product_img">
+        <img src="img/products/lectures.jpg" alt="Открытые лекции" class="product_img">
         <div class="product_text">
             <span>Я регулярно провожу открытые лекции по PersonaBuilding.<br>
                 На лекциях я рассказываю о PersonaBuilding, рассказываю о том, как решить
@@ -393,7 +393,7 @@ let for_bootcamp = `<div class="itc-slider__item" id="bootcamp">
 <div class="productslider_block">
     <h2 class="slider_title_product">Индивидуальные сеансы</h2>
     <div class="slider_product_container">
-        <img src="img/consultations_img.jpg" alt="Индивидуальные сеансы" class="product_img">
+        <img src="img/products/consultations.JPG" alt="Индивидуальные сеансы" class="product_img">
         <div class="product_text">
             <span>Индивидуальный сеанс – на нём присутствуете только Вы и Психолог.<br>
                 Продолжительность сеанса – 60 минут.<br>
@@ -410,7 +410,7 @@ let for_bootcamp = `<div class="itc-slider__item" id="bootcamp">
 <div class="productslider_block">
     <h2 class="slider_title_product">Групповые сеансы</h2>
     <div class="slider_product_container">
-        <img src="img/group_classes_img.jpeg" alt="Групповые сеансы" class="product_img">
+        <img src="img/products/group_classes.jpg" alt="Групповые сеансы" class="product_img">
         <div class="product_text">
             <span>На групповом сеансе присутствуете Вы, психолог и другие члены группы.<br>
                 Общее количество участников (включая психолога) – 12 человек.<br>
@@ -431,7 +431,7 @@ let for_bootcamp = `<div class="itc-slider__item" id="bootcamp">
 <div class="productslider_block">
     <h2 class="slider_title_product">Семейные сеансы</h2>
     <div class="slider_product_container">
-        <img src="img/consultations_img.jpg" alt="Семейные сеансы" class="product_img">
+        <img src="img/products/family_therapy.JPG" alt="Семейные сеансы" class="product_img">
         <div class="product_text">
             <span>Семья – это система, которую составляют минимум два человека. Однако для того,
                 чтобы стать клиентом данного вида сеансов, вам необязательно иметь семью в
@@ -455,7 +455,7 @@ let for_lectures = `<div class="itc-slider__item" id="lectures">
 <div class="productslider_block">
     <h2 class="slider_title_product">Открытые лекции</h2>
     <div class="slider_product_container">
-        <img src="img/products/IMG_3190.jpg" alt="Открытые лекции" class="product_img">
+        <img src="img/products/lectures.jpg" alt="Открытые лекции" class="product_img">
         <div class="product_text">
             <span>Я регулярно провожу открытые лекции по PersonaBuilding.<br>
                 На лекциях я рассказываю о PersonaBuilding, рассказываю о том, как решить
@@ -473,7 +473,7 @@ let for_lectures = `<div class="itc-slider__item" id="lectures">
 <div class="productslider_block">
     <h2 class="slider_title_product">Индивидуальные сеансы</h2>
     <div class="slider_product_container">
-        <img src="img/consultations_img.jpg" alt="Индивидуальные сеансы" class="product_img">
+        <img src="img/products/consultations.JPG" alt="Индивидуальные сеансы" class="product_img">
         <div class="product_text">
             <span>Индивидуальный сеанс – на нём присутствуете только Вы и Психолог.<br>
                 Продолжительность сеанса – 60 минут.<br>
@@ -490,7 +490,7 @@ let for_lectures = `<div class="itc-slider__item" id="lectures">
 <div class="productslider_block">
     <h2 class="slider_title_product">Групповые сеансы</h2>
     <div class="slider_product_container">
-        <img src="img/group_classes_img.jpeg" alt="Групповые сеансы" class="product_img">
+        <img src="img/products/group_classes.jpg" alt="Групповые сеансы" class="product_img">
         <div class="product_text">
             <span>На групповом сеансе присутствуете Вы, психолог и другие члены группы.<br>
                 Общее количество участников (включая психолога) – 12 человек.<br>
@@ -511,7 +511,7 @@ let for_lectures = `<div class="itc-slider__item" id="lectures">
 <div class="productslider_block">
     <h2 class="slider_title_product">Семейные сеансы</h2>
     <div class="slider_product_container">
-        <img src="img/consultations_img.jpg" alt="Семейные сеансы" class="product_img">
+        <img src="img/products/family_therapy.JPG" alt="Семейные сеансы" class="product_img">
         <div class="product_text">
             <span>Семья – это система, которую составляют минимум два человека. Однако для того,
                 чтобы стать клиентом данного вида сеансов, вам необязательно иметь семью в
@@ -534,7 +534,7 @@ let for_lectures = `<div class="itc-slider__item" id="lectures">
 <div class="productslider_block">
     <h2 class="slider_title_product">Bootsession</h2>
     <div class="slider_product_container">
-        <img src="img/bootcamp_img.png" alt="Bootsession сеанс" class="product_img">
+        <img src="img/products/bootcamp.png" alt="Bootsession сеанс" class="product_img">
         <div class="product_text">
             <span>Bootsession предполагает сочетание индивидуального и группового формата
                 сеанса. Происходит чередование индивидуального и группового сеансов.<br>
