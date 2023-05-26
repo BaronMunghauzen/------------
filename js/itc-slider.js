@@ -119,6 +119,7 @@ class ItcSlider {
 
   slideTo(index) {
     this.#moveTo(index);
+    this.setHeight()
   }
 
   reset() {
@@ -369,6 +370,7 @@ class ItcSlider {
     this.#state.elItems.dispatchEvent(new Event('animating', {
       bubbles: true
     }));
+    this.setHeight()
   }
 
   #moveTo(index) {
@@ -455,6 +457,63 @@ class ItcSlider {
     this.#state.exTranslateMin = this.#state.els[min].translate;
     this.#state.exTranslateMax = this.#state.els[max].translate;
   }
+
+
+
+
+
+  
+  checkWhatActive () {
+  let activeSlide = this.#state.activeItems
+  for (let i = 0; i < this.#state.activeItems.length; i++) {
+    if (activeSlide[0] == 1) {
+        return 0;
+    }
+    if (activeSlide[1] == 1) {
+        return 1;
+    }
+    if (activeSlide[2] == 1) {
+        return 2;
+    }
+    if (activeSlide[3] == 1) {
+        return 3;
+    }
+    if (activeSlide[4] == 1) {
+        return 4;
+    }
+    }
+  }
+
+  setHeight() {
+    let activeOne = this.checkWhatActive()
+    let heightBlock = document.querySelector('.itc-slider-items')
+    if (activeOne == 0) {
+      heightBlock.classList.add("active_consulatations")
+      heightBlock.classList.remove("active_group_classes")
+      heightBlock.classList.remove("active_family_therapy_bootcamp")
+      heightBlock.classList.remove("active_lectures")
+    }
+    if (activeOne == 1) {
+      heightBlock.classList.add("active_group_classes")
+      heightBlock.classList.remove("active_consulatations")
+      heightBlock.classList.remove("active_family_therapy_bootcamp")
+      heightBlock.classList.remove("active_lectures")
+    }
+    if (activeOne == 2 | activeOne == 3) {
+      heightBlock.classList.add("active_family_therapy_bootcamp")
+      heightBlock.classList.remove("active_consulatations")
+      heightBlock.classList.remove("active_group_classes")
+      heightBlock.classList.remove("active_lectures")
+    }
+    if (activeOne == 4) {
+      heightBlock.classList.add("active_lectures")
+      heightBlock.classList.remove("active_consulatations")
+      heightBlock.classList.remove("active_group_classes")
+      heightBlock.classList.remove("active_family_therapy_bootcamp")
+    }
+    
+  }
+
 }
 
 ItcSlider.createInstances();
@@ -465,7 +524,7 @@ ItcSlider.createInstances();
 
 
 let slider_container = document.querySelector('.itc-slider')
-let slider = ItcSlider.getInstance(slider_container)
+let slider = ItcSlider.getOrCreateInstance(slider_container)
 
 let consultations = document.querySelector('.consultations')
 
@@ -496,3 +555,5 @@ bootcamp.onclick = function (e) {
 lectures.onclick = function (e) {
   slider.slideTo(4)
 }
+
+slider.setHeight()

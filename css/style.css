@@ -730,6 +730,20 @@ div .main_h {
     color: rgb(20, 174, 207);
 }
 
+.active_consulatations {
+    height: 840px;
+}
+.active_group_classes {
+    height: 960px;
+}
+.active_family_therapy_bootcamp {
+    height: 1040px;
+}
+.active_lectures {
+    height: 890px;
+}
+
+
 
 @media (max-width:1000px) {
     .slider_title_product {
@@ -740,6 +754,19 @@ div .main_h {
     }
     .product_text button {
         font-size: 21px;
+    }
+
+    .active_consulatations {
+        height: 840px;
+    }
+    .active_group_classes {
+        height: 1010px;
+    }
+    .active_family_therapy_bootcamp {
+        height: 1040px;
+    }
+    .active_lectures {
+        height: 890px;
     }
 }
 
@@ -754,6 +781,33 @@ div .main_h {
     .product_text button {
         font-size: 18px;
     }
+    .active_consulatations {
+        height: 640px;
+    }
+    
+    .active_group_classes {
+        height: 830px;
+    }
+    .active_family_therapy_bootcamp {
+        height: 850px;
+    }
+    .active_lectures {
+        height: 680px;
+    }
+}
+@media (max-width:650px) {
+    .active_consulatations {
+        height: 640px;
+    }
+    .active_group_classes {
+        height: 830px;
+    }
+    .active_family_therapy_bootcamp {
+        height: 1050px;
+    }
+    .active_lectures {
+        height: 730px;
+    }
 }
 
 @media (max-width:500px) {
@@ -761,8 +815,24 @@ div .main_h {
         max-width: 350px;
         margin-bottom: 15px;
     }
+    .product_text {
+        font-size: 16px;
+    }
     .product_text button {
         width: 150px;
+    }
+
+    .active_consulatations {
+        height: 640px;
+    }
+    .active_group_classes {
+        height: 880px;
+    }
+    .active_family_therapy_bootcamp {
+        height: 1050px;
+    }
+    .active_lectures {
+        height: 690px;
     }
 }
 
@@ -770,6 +840,18 @@ div .main_h {
     .product_img {
         max-width: 250px;
         margin-bottom: 15px;
+    }
+    .active_consulatations {
+        height: 640px;
+    }
+    .active_group_classes {
+        height: 890px;
+    }
+    .active_family_therapy_bootcamp {
+        height: 1110px;
+    }
+    .active_lectures {
+        height: 690px;
     }
 }
 
