@@ -1,4 +1,4 @@
-let slider_container = document.querySelector('.itc-slider__items')
+let slider_container = document.querySelector('.itc-slider')
 
 let consultations = document.querySelector('.consultations')
 
@@ -11,27 +11,37 @@ let bootcamp = document.querySelector('.bootcamp')
 let lectures = document.querySelector('.lectures')
 
 consultations.onclick = function (e) {
-    slider_container.innerHTML = for_consultations
+    slider_container.
+    slider_container.innerHTML = for_consultations;
+    ItcSlider.getOrCreateInstance('.slider-container');
 }
 
 group_classes.onclick = function (e) {
-    slider_container.innerHTML = for_group_classes
+    slider_container.innerHTML = for_group_classes;
+    ItcSlider.getOrCreateInstance('.slider-container');
 }
 
 family_therapy.onclick = function (e) {
-    slider_container.innerHTML = for_family_therapy
+    slider_container.innerHTML = for_family_therapy;
+    ItcSlider.getOrCreateInstance('.slider-container');
 }
 
 bootcamp.onclick = function (e) {
-    slider_container.innerHTML = for_bootcamp
+    slider_container.innerHTML = for_bootcamp;
+    ItcSlider.getOrCreateInstance('.slider-container');
 }
 
 lectures.onclick = function (e) {
-    slider_container.innerHTML = for_lectures
+    slider_container.innerHTML = for_lectures;
+    ItcSlider.getOrCreateInstance('.slider-container');
 }
 
 
-let for_consultations = `<div class="itc-slider__item" id="consultations">
+let for_consultations = `
+<div class="itc-slider" data-slider="itc-slider" data-swipe="true" data-loop="true" id="slider">
+<div class="itc-slider-wrapper">
+<div class="itc-slider-items">
+<div class="itc-slider-item" id="consultations">
 <div class="productslider_block">
     <h2 class="slider_title_product">Индивидуальные сеансы</h2>
     <div class="slider_product_container">
@@ -48,7 +58,7 @@ let for_consultations = `<div class="itc-slider__item" id="consultations">
     </div>
 </div>
 </div>
-<div class="itc-slider__item" id="group_classes">
+<div class="itc-slider-item" id="group_classes">
 <div class="productslider_block">
     <h2 class="slider_title_product">Групповые сеансы</h2>
     <div class="slider_product_container">
@@ -69,7 +79,7 @@ let for_consultations = `<div class="itc-slider__item" id="consultations">
     </div>
 </div>
 </div>
-<div class="itc-slider__item" id="family_therapy">
+<div class="itc-slider-item" id="family_therapy">
 <div class="productslider_block">
     <h2 class="slider_title_product">Семейные сеансы</h2>
     <div class="slider_product_container">
@@ -92,7 +102,7 @@ let for_consultations = `<div class="itc-slider__item" id="consultations">
     </div>
 </div>
 </div>
-<div class="itc-slider__item" id="bootcamp">
+<div class="itc-slider-item" id="bootcamp">
 <div class="productslider_block">
     <h2 class="slider_title_product">Bootsession</h2>
     <div class="slider_product_container">
@@ -117,7 +127,7 @@ let for_consultations = `<div class="itc-slider__item" id="consultations">
     </div>
 </div>
 </div>
-<div class="itc-slider__item" id="lectures">
+<div class="itc-slider-item" id="lectures">
 <div class="productslider_block">
     <h2 class="slider_title_product">Открытые лекции</h2>
     <div class="slider_product_container">
@@ -134,9 +144,21 @@ let for_consultations = `<div class="itc-slider__item" id="consultations">
         </div>
     </div>
 </div>
-</div>`
+</div>
+</div>
+                </div>
+            
+                <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+                <button class="itc-slider-btn itc-slider-btn-prev"></button>
+                <button class="itc-slider-btn itc-slider-btn-next"></button>
+                </div>
+                `
 
-let for_group_classes = `<div class="itc-slider__item" id="group_classes">
+let for_group_classes = `
+<div class="itc-slider" data-slider="itc-slider" data-swipe="true" data-loop="true" id="slider">
+<div class="itc-slider-wrapper">
+<div class="itc-slider-items">
+    <div class="itc-slider-item" id="group_classes">
 <div class="productslider_block">
     <h2 class="slider_title_product">Групповые сеансы</h2>
     <div class="slider_product_container">
@@ -157,7 +179,7 @@ let for_group_classes = `<div class="itc-slider__item" id="group_classes">
     </div>
 </div>
 </div>
-<div class="itc-slider__item" id="family_therapy">
+<div class="itc-slider-item" id="family_therapy">
 <div class="productslider_block">
     <h2 class="slider_title_product">Семейные сеансы</h2>
     <div class="slider_product_container">
@@ -180,7 +202,7 @@ let for_group_classes = `<div class="itc-slider__item" id="group_classes">
     </div>
 </div>
 </div>
-<div class="itc-slider__item" id="bootcamp">
+<div class="itc-slider-item" id="bootcamp">
 <div class="productslider_block">
     <h2 class="slider_title_product">Bootsession</h2>
     <div class="slider_product_container">
@@ -205,7 +227,7 @@ let for_group_classes = `<div class="itc-slider__item" id="group_classes">
     </div>
 </div>
 </div>
-<div class="itc-slider__item" id="lectures">
+<div class="itc-slider-item" id="lectures">
 <div class="productslider_block">
     <h2 class="slider_title_product">Открытые лекции</h2>
     <div class="slider_product_container">
@@ -223,7 +245,7 @@ let for_group_classes = `<div class="itc-slider__item" id="group_classes">
     </div>
 </div>
 </div>
-<div class="itc-slider__item" id="consultations">
+<div class="itc-slider-item" id="consultations">
 <div class="productslider_block">
     <h2 class="slider_title_product">Индивидуальные сеансы</h2>
     <div class="slider_product_container">
@@ -235,13 +257,23 @@ let for_group_classes = `<div class="itc-slider__item" id="group_classes">
                 <!-- Стоимость – 5 000,00 руб./сеанс.<br> -->
                 <div class="space"> </div>
                 <button><a href="#registration">Для записи нажмите сюда</a></button>
-            </span>
+                </span>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-</div>`
+        </div>
+        </div>
+                        </div>
+                    
+                        <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+                        <button class="itc-slider-btn itc-slider-btn-prev"></button>
+                        <button class="itc-slider-btn itc-slider-btn-next"></button>
+                        </div>`
 
-let for_family_therapy = `<div class="itc-slider__item" id="family_therapy">
+let for_family_therapy = `<div class="itc-slider" data-slider="itc-slider" data-swipe="true" data-loop="true" id="slider">
+<div class="itc-slider-wrapper">
+    <div class="itc-slider-items">
+<div class="itc-slider-item" id="family_therapy">
 <div class="productslider_block">
     <h2 class="slider_title_product">Семейные сеансы</h2>
     <div class="slider_product_container">
@@ -264,7 +296,7 @@ let for_family_therapy = `<div class="itc-slider__item" id="family_therapy">
     </div>
 </div>
 </div>
-<div class="itc-slider__item" id="bootcamp">
+<div class="itc-slider-item" id="bootcamp">
 <div class="productslider_block">
     <h2 class="slider_title_product">Bootsession</h2>
     <div class="slider_product_container">
@@ -289,7 +321,7 @@ let for_family_therapy = `<div class="itc-slider__item" id="family_therapy">
     </div>
 </div>
 </div>
-<div class="itc-slider__item" id="lectures">
+<div class="itc-slider-item" id="lectures">
 <div class="productslider_block">
     <h2 class="slider_title_product">Открытые лекции</h2>
     <div class="slider_product_container">
@@ -307,7 +339,7 @@ let for_family_therapy = `<div class="itc-slider__item" id="family_therapy">
     </div>
 </div>
 </div>
-<div class="itc-slider__item" id="consultations">
+<div class="itc-slider-item" id="consultations">
 <div class="productslider_block">
     <h2 class="slider_title_product">Индивидуальные сеансы</h2>
     <div class="slider_product_container">
@@ -324,7 +356,7 @@ let for_family_therapy = `<div class="itc-slider__item" id="family_therapy">
     </div>
 </div>
 </div>
-<div class="itc-slider__item" id="group_classes">
+<div class="itc-slider-item" id="group_classes">
 <div class="productslider_block">
     <h2 class="slider_title_product">Групповые сеансы</h2>
     <div class="slider_product_container">
@@ -340,13 +372,23 @@ let for_family_therapy = `<div class="itc-slider__item" id="family_therapy">
                 <!-- Стоимость – 2 500 руб./сеанс.<br> -->
                 <div class="space"> </div>
                 <button><a href="#registration">Для записи нажмите сюда</a></button>
-            </span>
+                </span>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-</div>`
+        </div>
+        </div>
+                        </div>
+                    
+                        <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+                        <button class="itc-slider-btn itc-slider-btn-prev"></button>
+                        <button class="itc-slider-btn itc-slider-btn-next"></button>
+                        </div>`
 
-let for_bootcamp = `<div class="itc-slider__item" id="bootcamp">
+let for_bootcamp = `<div class="itc-slider" data-slider="itc-slider" data-swipe="true" data-loop="true" id="slider">
+<div class="itc-slider-wrapper">
+    <div class="itc-slider-items">
+<div class="itc-slider-item" id="bootcamp">
 <div class="productslider_block">
     <h2 class="slider_title_product">Bootsession</h2>
     <div class="slider_product_container">
@@ -371,7 +413,7 @@ let for_bootcamp = `<div class="itc-slider__item" id="bootcamp">
     </div>
 </div>
 </div>
-<div class="itc-slider__item" id="lectures">
+<div class="itc-slider-item" id="lectures">
 <div class="productslider_block">
     <h2 class="slider_title_product">Открытые лекции</h2>
     <div class="slider_product_container">
@@ -389,7 +431,7 @@ let for_bootcamp = `<div class="itc-slider__item" id="bootcamp">
     </div>
 </div>
 </div>
-<div class="itc-slider__item" id="consultations">
+<div class="itc-slider-item" id="consultations">
 <div class="productslider_block">
     <h2 class="slider_title_product">Индивидуальные сеансы</h2>
     <div class="slider_product_container">
@@ -406,7 +448,7 @@ let for_bootcamp = `<div class="itc-slider__item" id="bootcamp">
     </div>
 </div>
 </div>
-<div class="itc-slider__item" id="group_classes">
+<div class="itc-slider-item" id="group_classes">
 <div class="productslider_block">
     <h2 class="slider_title_product">Групповые сеансы</h2>
     <div class="slider_product_container">
@@ -427,7 +469,7 @@ let for_bootcamp = `<div class="itc-slider__item" id="bootcamp">
     </div>
 </div>
 </div>
-<div class="itc-slider__item" id="family_therapy">
+<div class="itc-slider-item" id="family_therapy">
 <div class="productslider_block">
     <h2 class="slider_title_product">Семейные сеансы</h2>
     <div class="slider_product_container">
@@ -445,13 +487,23 @@ let for_bootcamp = `<div class="itc-slider__item" id="bootcamp">
                 <!-- Стоимость – 6 000,00 руб./сеанс<br> -->
                 <div class="space"> </div>
                 <button><a href="#registration">Для записи нажмите сюда</a></button>
-            </span>
+                </span>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-</div>`
+        </div>
+        </div>
+                        </div>
+                    
+                        <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+                        <button class="itc-slider-btn itc-slider-btn-prev"></button>
+                        <button class="itc-slider-btn itc-slider-btn-next"></button>
+                        </div>`
 
-let for_lectures = `<div class="itc-slider__item" id="lectures">
+let for_lectures = `<div class="itc-slider" data-slider="itc-slider" data-swipe="true" data-loop="true" id="slider">
+<div class="itc-slider-wrapper">
+    <div class="itc-slider-items">
+    <div class="itc-slider-item" id="lectures">
 <div class="productslider_block">
     <h2 class="slider_title_product">Открытые лекции</h2>
     <div class="slider_product_container">
@@ -469,7 +521,7 @@ let for_lectures = `<div class="itc-slider__item" id="lectures">
     </div>
 </div>
 </div>
-<div class="itc-slider__item" id="consultations">
+<div class="itc-slider-item" id="consultations">
 <div class="productslider_block">
     <h2 class="slider_title_product">Индивидуальные сеансы</h2>
     <div class="slider_product_container">
@@ -486,7 +538,7 @@ let for_lectures = `<div class="itc-slider__item" id="lectures">
     </div>
 </div>
 </div>
-<div class="itc-slider__item" id="group_classes">
+<div class="itc-slider-item" id="group_classes">
 <div class="productslider_block">
     <h2 class="slider_title_product">Групповые сеансы</h2>
     <div class="slider_product_container">
@@ -507,7 +559,7 @@ let for_lectures = `<div class="itc-slider__item" id="lectures">
     </div>
 </div>
 </div>
-<div class="itc-slider__item" id="family_therapy">
+<div class="itc-slider-item" id="family_therapy">
 <div class="productslider_block">
     <h2 class="slider_title_product">Семейные сеансы</h2>
     <div class="slider_product_container">
@@ -530,7 +582,7 @@ let for_lectures = `<div class="itc-slider__item" id="lectures">
     </div>
 </div>
 </div>
-<div class="itc-slider__item" id="bootcamp">
+<div class="itc-slider-item" id="bootcamp">
 <div class="productslider_block">
     <h2 class="slider_title_product">Bootsession</h2>
     <div class="slider_product_container">
@@ -550,8 +602,15 @@ let for_lectures = `<div class="itc-slider__item" id="lectures">
                 <!-- Стоимость – 3 500,00 руб./цикл<br> -->
                 <div class="space"> </div>
                 <button><a href="#registration">Для записи нажмите сюда</a></button>
-            </span>
+                </span>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-</div>`
+        </div>
+        </div>
+                        </div>
+                    
+                        <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+                        <button class="itc-slider-btn itc-slider-btn-prev"></button>
+                        <button class="itc-slider-btn itc-slider-btn-next"></button>
+                        </div>`

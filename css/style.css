@@ -659,7 +659,10 @@ div .main_h {
 
 
 
-
+.slider-container {
+    height: 100%;
+    width: 100%;
+}
 
 .productslider_block {
     display: flex;
