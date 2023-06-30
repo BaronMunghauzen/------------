@@ -371,9 +371,9 @@ div .main_h {
     width: 100%;
     height: 95%;
     margin: 5vh 0;
-    background-color: rgb(20, 174, 207);
+    background-color: rgb(242, 242, 242);
     position: relative;
-    color: white;
+    color: black;
 }
 
 .title_product {
@@ -702,13 +702,13 @@ div .main_h {
 }
 
 .product_text a {
-    color: white;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    background-color: rgb(20, 174, 207);
-    border: 2px solid rgb(20, 174, 207);
+    background-color: rgb(242, 242, 242);
+    border: 2px solid rgb(242, 242, 242);
     border-radius: 8px;    
     margin-top: 1opx;
 }
@@ -716,8 +716,8 @@ div .main_h {
 
 .product_text button {
     width: 250px;
-    /* background-color: rgb(20, 174, 207); */
-    border: 2px solid white;
+    /* background-color: rgb(242, 242, 242); */
+    border: 2px solid black;
     border-radius: 8px;
     cursor: pointer;
     margin-bottom: 30px;
@@ -727,17 +727,17 @@ div .main_h {
 
 .product_text a:hover {
     background-color: white;
-    color: rgb(20, 174, 207);
+    color: black;
 }
 
 .active_consulatations {
-    height: 840px;
+    height: 930px;
 }
 .active_group_classes {
-    height: 960px;
+    height: 1040px;
 }
 .active_family_therapy_bootcamp {
-    height: 1040px;
+    height: 980px;
 }
 .active_lectures {
     height: 890px;
@@ -757,13 +757,13 @@ div .main_h {
     }
 
     .active_consulatations {
-        height: 840px;
+        height: 950px;
     }
     .active_group_classes {
-        height: 1010px;
+        height: 1110px;
     }
     .active_family_therapy_bootcamp {
-        height: 1040px;
+        height: 1020px;
     }
     .active_lectures {
         height: 890px;
@@ -782,28 +782,28 @@ div .main_h {
         font-size: 18px;
     }
     .active_consulatations {
-        height: 640px;
+        height: 800px;
     }
     
     .active_group_classes {
-        height: 830px;
+        height: 900px;
     }
     .active_family_therapy_bootcamp {
         height: 850px;
     }
     .active_lectures {
-        height: 680px;
+        height: 710px;
     }
 }
 @media (max-width:650px) {
     .active_consulatations {
-        height: 640px;
+        height: 860px;
     }
     .active_group_classes {
-        height: 830px;
+        height: 1030px;
     }
     .active_family_therapy_bootcamp {
-        height: 1050px;
+        height: 930px;
     }
     .active_lectures {
         height: 730px;
@@ -823,16 +823,16 @@ div .main_h {
     }
 
     .active_consulatations {
-        height: 640px;
+        height: 840px;
     }
     .active_group_classes {
-        height: 880px;
+        height: 1030px;
     }
     .active_family_therapy_bootcamp {
-        height: 1050px;
+        height: 950px;
     }
     .active_lectures {
-        height: 690px;
+        height: 730px;
     }
 }
 
@@ -842,16 +842,16 @@ div .main_h {
         margin-bottom: 15px;
     }
     .active_consulatations {
-        height: 640px;
+        height: 920px;
     }
     .active_group_classes {
-        height: 890px;
+        height: 1130px;
     }
     .active_family_therapy_bootcamp {
-        height: 1110px;
+        height: 1070px;
     }
     .active_lectures {
-        height: 690px;
+        height: 770px;
     }
 }
 
@@ -865,7 +865,7 @@ div .main_h {
 
 .registration {
     width: 100%;    
-    color: white;
+    color: black;
     position: relative;
 }
 
@@ -876,7 +876,7 @@ div .main_h {
     flex-direction: column;
     width: 100%;
     margin: 5vh 0;
-    background-color: rgb(20, 174, 207);
+    background-color: rgb(242, 242, 242);
 }
 form::after {
     content: "";
@@ -993,22 +993,20 @@ form.sending::after {
 .registration_button {
     width: 300px;
     height: 4vw;
-    border: 2px solid white;
+    border: 2px solid black;
     border-radius: 8px;
     cursor: pointer;
     margin-bottom: 30px;
     font-size: 25px;
-    border-color: white;
-    color: rgb(20, 174, 207);
+    color: black;
     font-weight: 900;
     background-color: white;
 }
 
 .registration_button:hover {
-    border: 3px solid white;
     cursor: pointer;
-    background-color: rgb(20, 174, 207);
-    color: white;
+    background-color: rgb(242, 242, 242);
+    color: black;
 
 }
 
@@ -1046,8 +1044,7 @@ form.sending::after {
 
 @media (max-width:600px) {
     .title_registration {
-        padding-top: 0px;
-        margin-bottom: 40px;
+        text-align: center;
     }
     .type_row, .fullname_row, .phone_row, .email_row {
         font-size: 18px;
@@ -1070,7 +1067,7 @@ form.sending::after {
         margin-bottom: 40px;
     }
     .registration_button {
-        width: 100px;
+        width: 150px;
         height: 45px;
         font-size: 18px;
     }
@@ -1103,7 +1100,7 @@ form.sending::after {
         margin-bottom: 40px;
     }
     .registration_button {
-        width: 70px;
+        width: 150px;
         height: 45px;
         font-size: 15px;
     }
