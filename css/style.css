@@ -77,6 +77,7 @@ div .main_h {
     font-size: 55px;
     position: relative;
     left: 20px;
+    text-align: center;
 }
 
 .line {
@@ -88,6 +89,7 @@ div .main_h {
 .psychology, .PersonaBuilding {
     font-size: 30px;
     font-weight: 900;
+    text-align: center;
     
 }
 
@@ -371,7 +373,7 @@ div .main_h {
     width: 100%;
     height: 95%;
     margin: 5vh 0;
-    background-color: rgb(242, 242, 242);
+    background-color: rgb(185, 185, 185);
     position: relative;
     color: black;
 }
@@ -440,31 +442,31 @@ div .main_h {
 }
 
 .photo_consulatations {
-    background-image: url('../img/products/consultations.JPG');
+    background-image: url('../img/products/circle/circle\ consulatations.JPG');
     background-size: cover;
     background-position: center;
 }
 
 .photo_group_classes {
-    background-image: url('../img/products/group_classes.jpg');
+    background-image: url('../img/products/circle/circle\ group\ classes.JPG');
     background-size: cover;
     background-position: center;
 }
 
 .photo_family_therapy {
-    background-image: url('../img/products/family_therapy.JPG');
+    background-image: url('../img/products/circle/circle\ family\ therapy.JPG');
     background-size: cover;
     background-position: center;
 }
 
 .photo_bootcamp {
-    background-image: url('../img/products/bootcamp.png');
+    background-image: url('../img/products/circle/circle\ bootcamp.JPG');
     background-size: cover;
     background-position: center;
 }
 
 .photo_lectures {
-    background-image: url('../img/products/lectures.jpg');
+    background-image: url('../img/products/circle/circle\ lectures.JPG');
     background-size: cover;
     background-position: center;
 }
@@ -692,7 +694,7 @@ div .main_h {
 }
 .product_text {
     display: flex;
-    text-align: center;
+    text-align: justify;
     font-size: 27px;
     line-height: 32px;
     max-width: 90%;
@@ -701,22 +703,24 @@ div .main_h {
     justify-content: space-around;
 }
 
-.product_text a {
+.slider_product_container a {
     color: black;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    background-color: rgb(242, 242, 242);
-    border: 2px solid rgb(242, 242, 242);
+    background-color: rgb(185, 185, 185);
+    border: 2px solid rgb(185, 185, 185);
     border-radius: 8px;    
     margin-top: 1opx;
 }
 
 
-.product_text button {
+.slider_product_container button {
+    
+    text-align: center;
     width: 250px;
-    /* background-color: rgb(242, 242, 242); */
+    /* background-color: rgb(185, 185, 185); */
     border: 2px solid black;
     border-radius: 8px;
     cursor: pointer;
@@ -725,19 +729,23 @@ div .main_h {
     padding: 0;
 }
 
-.product_text a:hover {
+.slider_product_container a:hover {
     background-color: white;
     color: black;
 }
 
+#registration{
+    text-align: center;
+}
+
 .active_consulatations {
-    height: 930px;
+    height: 1020px;
 }
 .active_group_classes {
-    height: 1040px;
+    height: 1200px;
 }
 .active_family_therapy_bootcamp {
-    height: 980px;
+    height: 1050px;
 }
 .active_lectures {
     height: 890px;
@@ -757,16 +765,16 @@ div .main_h {
     }
 
     .active_consulatations {
-        height: 950px;
-    }
-    .active_group_classes {
-        height: 1110px;
-    }
-    .active_family_therapy_bootcamp {
         height: 1020px;
     }
+    .active_group_classes {
+        height: 1150px;
+    }
+    .active_family_therapy_bootcamp {
+        height: 1090px;
+    }
     .active_lectures {
-        height: 890px;
+        height: 920px;
     }
 }
 
@@ -782,31 +790,31 @@ div .main_h {
         font-size: 18px;
     }
     .active_consulatations {
-        height: 800px;
+        height: 840px;
     }
     
     .active_group_classes {
-        height: 900px;
+        height: 980px;
     }
     .active_family_therapy_bootcamp {
-        height: 850px;
+        height: 910px;
     }
     .active_lectures {
-        height: 710px;
+        height: 750px;
     }
 }
 @media (max-width:650px) {
     .active_consulatations {
-        height: 860px;
+        height: 910px;
     }
     .active_group_classes {
-        height: 1030px;
+        height: 1140px;
     }
     .active_family_therapy_bootcamp {
-        height: 930px;
+        height: 980px;
     }
     .active_lectures {
-        height: 730px;
+        height: 770px;
     }
 }
 
@@ -823,13 +831,13 @@ div .main_h {
     }
 
     .active_consulatations {
-        height: 840px;
+        height: 880px;
     }
     .active_group_classes {
-        height: 1030px;
+        height: 1100px;
     }
     .active_family_therapy_bootcamp {
-        height: 950px;
+        height: 990px;
     }
     .active_lectures {
         height: 730px;
@@ -842,16 +850,16 @@ div .main_h {
         margin-bottom: 15px;
     }
     .active_consulatations {
-        height: 920px;
+        height: 1020px;
     }
     .active_group_classes {
-        height: 1130px;
+        height: 1340px;
     }
     .active_family_therapy_bootcamp {
-        height: 1070px;
+        height: 1300px;
     }
     .active_lectures {
-        height: 770px;
+        height: 820px;
     }
 }
 
@@ -876,7 +884,7 @@ div .main_h {
     flex-direction: column;
     width: 100%;
     margin: 5vh 0;
-    background-color: rgb(242, 242, 242);
+    background-color: rgb(185, 185, 185);
 }
 form::after {
     content: "";
@@ -1005,7 +1013,7 @@ form.sending::after {
 
 .registration_button:hover {
     cursor: pointer;
-    background-color: rgb(242, 242, 242);
+    background-color: rgb(185, 185, 185);
     color: black;
 
 }
