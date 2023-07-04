@@ -289,9 +289,9 @@
                     <div class="type_row">
                         <!-- <span>Тип продукта:</span> -->
                         <select name="product_type" id="" class="product_type _req">
-                            <option disabled selected>Выберите тип сеанса</option>
+                            <!-- <option disabled >Выберите тип сеанса</option> -->
                             <option value="consultations">Индивидуальный сеанс</option>
-                            <option value="group_classes">Групповой сеанс</option>
+                            <option value="group_classes" selected>Групповой сеанс</option>
                             <option value="family_therapy">Семейный сеанс</option>
                             <option value="bootcamp">Bootsession</option>
                             <option value="lectures">Открытая лекция</option>
